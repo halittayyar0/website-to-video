@@ -2,11 +2,21 @@
 
 Choose only decisions that support this site's visitor action. A shopping product page may need an accurate product-detail insert with no overlay, rather than a lifestyle hero. A rental listing needs faithful property photography, not an invented villa. A software page may use a verified screen recording; if choosing an abstract workflow, label it as an illustration and do not fabricate actual UI, metrics or features.
 
+## Request fit
+
+Keep the user's explicit subject, motion, end pose, duration, aspect, fidelity and playback requirements in the continuity record. Fill unspecified choices with the defaults; an easier shot is not a completed version of a different requested shot. If requirements are compatible and supported, proceed without an extra creative questionnaire.
+
+When a conflict changes the shot, state it briefly and ask only the decision needed to resolve it. Keep the affected END/video pending while doing any independent source work. For example, a front-facing subject completing360 degrees returns to the front; a rear END is a half-turn. Ask which end pose/turn the user means rather than silently delivering a small front push. A label saying an alternative is different does not authorize substituting its complete handoff. Offer a brief alternative if useful; expand it after the user chooses it or has already delegated fallback selection.
+
+For requested rotations or reveals, check the net end angle and turn rate (degrees divided by seconds), then inspect verified views of every side that will become visible. Front imagery alone does not establish a real product's back, interior or fine marks. Preserve the requested shot as pending when those references are essential; do not invent the missing view or change to abstract art. A START-only tool can suggest a final pose but cannot enforce it, and two endpoints alone do not verify an entire turn's intermediate geometry.
+
+For a requested loop, define the full cycle separately from the endpoint poses. Different endpoint angles cannot directly join seamlessly. A return movement can close a cycle only if compatible with the requested timing and action; describe its duration and role explicitly. Reverse playback is unsuitable for some directional actions, such as flowing water. Do not silently rename END as a midpoint or call matching stills a verified loop: rendered join position, velocity, exposure and intermediate motion need inspection.
+
 ## Endpoint continuity
 
 Keep a concise continuity record before calling a generator: source image URL or file, what it actually depicts, START file/asset ID, which details must match, the one allowed change, and the intended display/crop. Use the exact accepted START on END calls. A matching brand palette or similar silhouette is insufficient for a literal product/property. If the homepage image cannot be mapped to a named listing, keep it at collection level or verify the mapping; do not transfer another page's amenities onto it.
 
-List subject count, recognizable anchors, horizon/vanishing points, fixed light and materials. Describe only a small feasible change: a 2–4% slow camera push, a very slight shadow/water movement, or a small controlled subject motion. Do not combine a camera orbit, focal-length change, lighting transition and object action in five seconds. Moving toward a detailed product can reveal unseen geometry; avoid this when the source cannot verify it. Prefer a small image-plane push that does not invent hidden sides.
+List subject count, recognizable anchors, horizon/vanishing points, fixed light and materials. For an unspecified motion, prefer one small feasible change: a 2–4% slow camera push, very slight water movement, or small controlled subject motion. For an explicit motion, assess that motion against sources, timing and tool capability using Request fit above. Combining an orbit, focal-length change, lighting transition and object action in five seconds needs a feasible plan rather than a default promise. Moving toward a detailed product can reveal unseen geometry; preserve literal fidelity instead of inventing those surfaces.
 
 For an image-plane scale, keep proportions and relative scene geometry fixed while all apparent image-space sizes, line widths and spacing scale together. Do not also demand pixel-identical sizes or forbid the intended uniform size change; prohibit independent deformation instead. Describe this as a uniform scene transform.
 

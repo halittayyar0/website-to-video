@@ -1,8 +1,27 @@
-# Website to Video, v0.2.1 test raporu
+# Website to Video, v0.2.2 test raporu
 
 31 Ekim 2026. Yerel Windows/Codex ortamında yapıldı. Belge desteği, dosya kurulumu, elle davranış testi ve başka istemcide gerçek çalıştırma ayrı değerlendirilir.
 
-## Yeni sürümde kontrol edilenler
+## v0.2.2: açık çekim talebi ve çözümlenmemiş gereksinimler
+
+[Donmuş baz yanıtlar ve inceleme](tests/v022-baseline/review.json), v0.2.1'e aittir; v022 dosya/koşu adları iyileştirme kampanyasını belirtir. [Kaynak sürüm kaydı](tests/v022-baseline/provenance.json) bunu sabitler. A yanıtı,360 derece/önden arkaya çelişkisini ve eksik arka görünümü doğru bulduğu hâlde istenmemiş tam bir önden yakınlaşma teslimi yaptı. Şeffaf alternatif etiketi, özgün kapsamın karşılandığı anlamına gelmez.
+
+Dar düzeltme: tam iki uç teslimi çözümlenmiş uygulanabilir çekime bağlandı; varsayılan küçük hareket açık talebin yerine geçmez. Net son açı, dönüş hızı, eksik gerçek ürün görünümü ve döngünün tam çevrimi kontrol edilir. Gerekli END/video bekletilir; kullanıcı alternatif seçimini devretmişse o yetki korunur.
+
+[Yeni bağımsız koşu](tests/v022-rerun/evaluation.json), önceki yanıtları okumadan güncel skill ve referansları kullanıp altı gerçek metin yanıtı yazdı. Ana ajan yanıtları okudu ve değerlendirilen beş dosyanın SHA256 değerlerini güncel adayla eşleştirdi. Bunlar mevcut yerel kaynaklardan test fixture'larıdır; yeni canlı araştırma, yeni görsel/video üretimi veya başka hostta yürütme değildir. Resmî kaynak fotoğrafları ve reddedilmiş üretim denemeleri bu pakete eklenmedi; ham kaynak yolları yalnız yerel test girdilerini tanımlar.
+
+| Vaka | Gözlenen sonuç ve kanıt |
+|---|---|
+| [A — çelişen gerçek ürün dönüşü](tests/v022-rerun/A-response.md) |360 derece sonunda ön poz, arka END için180 derece ve72 derece/saniye hesaplandı. Tek gerekli açı kararı ve eksik arka/yan kaynaklar istendi; istenmemiş tam alternatif yazılmadı. Özgün çekim **beklemede**. |
+| [B — mobil kırpma / HTML metni](tests/v022-rerun/B-response.md) | İki bağımsız İngilizce uç promptu ve çift-girdili video promptu; dar ortak merkez alanı ve mobilde üstte HTML metni. Yeni üretim/kırpma/kontrast **doğrulanmadı**. |
+| [C — farklı açı ve kusursuz döngü](tests/v022-rerun/C-response.md) | END habersizce orta kareye çevrilmedi. Tek geçiş ile başlangıç durumuna dönen tam çevrim arasındaki karar istendi; END/video **beklemede**. |
+| [D — önceden izin verilmiş alternatif](tests/v022-rerun/D-response.md) | İzin verilmiş önden%2 yakınlaşma9:16 korunarak tam iki uç ve yalnız START girdili tek video promptuyla hazırlandı. Gerçek kumaş/logo sadakati **doğrulanmadı**. |
+| [E — uygulanabilir tam dönüş](tests/v022-rerun/E-response.md) | Özgün kurgu küpte beş saniyede360 derece korundu; hareket küçük yakınlaşmaya dönüştürülmedi. Altı sabit yüz, çeyrek tur zamanları ve ön/ön uçlar tarif edildi. Ara video geometrisi **doğrulanmadı**. |
+| [F — doğrulanmamış gerçek otel imkânı](tests/v022-rerun/F-response.md) | Kaynakta olmayan masa/kahvaltı “doğrulanmış” diye yazılmadı. Aynı oda kaynağı ve imkân doğrulaması eksik; gerçek çekim/etiket **beklemede**. Kurgu alternatifi seçilmiş gibi genişletilmedi. |
+
+Altı vakada karar/metin düzeyi davranış uygun bulundu: üç tamamlanmış prompt-only teslim, üç doğru bekletilmiş iş. Bu, altı videonun veya altı görsel çiftinin başarılı üretimi değildir. İnceleme kalan görüntü/video/host kanıtlarını özellikle açık bırakır; evrensel kusursuzluk iddiası yoktur. Mevcut mod seçimi, START-referanslı END ve çift başına iki onarım korunur. Aşağıdaki gerçek kaynak/görsel koşuları önceki sürümlerin kanıtıdır;0.2.2'de yeniden üretilmiş sayılmaz.
+
+## v0.2.0 / v0.2.1'de kontrol edilenler
 
 Metadata yama sürümü 0.2.1: aşağıda sınanan skill davranışı aynı kalır; sunucudaki önceki yazar kimliği korunur. Paylaşılabilir paket yazar iletişim e-postası içermez. Metadata geri okuması dış teslim kanıtında ayrıca doğrulanır.
 

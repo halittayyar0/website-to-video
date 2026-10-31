@@ -1,0 +1,160 @@
+{
+  "evaluation_kind": "prompt-only fixture execution and review of the actual saved responses",
+  "run_date": "2026-10-31",
+  "candidate": "v0.2.2 local frozen candidate",
+  "output_directory": "work/website-to-video/rerun-v022",
+  "scope": {
+    "fresh_prompt_responses_written": 6,
+    "existing_images_visually_inspected": 15,
+    "new_image_calls": 0,
+    "new_video_calls": 0,
+    "live_browsing_calls": 0,
+    "paid_calls": 0,
+    "publishing_or_external_messages": 0,
+    "skill_or_production_edits": 0,
+    "fresh_host_execution_tested": false,
+    "fresh_image_execution_tested": false,
+    "fresh_video_execution_tested": false,
+    "prior_forward_v022_answers_or_reviews_read": false,
+    "notes": "Read the current skill and four referenced documents. Reread production.md after parent reported the candidate freeze, including net end angle and degrees-per-second instruction. Historical plan.json files were read for dated source facts; their previous prompt contents were not adopted as accepted fixture responses. No prior result.json or reassessment/review was read."
+  },
+  "evaluated_files_sha256": {
+    "outputs/website-to-video/skills/website-to-video/SKILL.md": "5EBD0814874F44E2D538549FBC01B3A58B4DC0779D91A060F1EEAA084C94A196",
+    "outputs/website-to-video/skills/website-to-video/references/mode-selection.md": "8030877DAE22ED674766984125FBC8AD70A90BBE8C0AD40A325C0E01124241CC",
+    "outputs/website-to-video/skills/website-to-video/references/production.md": "D4A4DCA7C2DABA7599843FEFAB330C9CAC1C88B186678D77DC35EBE50E06F3A0",
+    "outputs/website-to-video/skills/website-to-video/references/result-template.md": "C9BFD4478107742E27C50A66916B08365EA5C0D4E5D32BAFC09D0A842B7D49EC",
+    "outputs/website-to-video/skills/website-to-video/references/evaluation.md": "5F5D8D150B49E9295E8F87088B528018A4264FFF43B5609B1276DBA88868C241"
+  },
+  "source_ledger": {
+    "fixture_capture_date": "2026-10-31, earlier local fixture; file timestamps are not a fresh website inspection",
+    "peak_images": [
+      "generation-v2/source-black-20l.jpg",
+      "generation-v2/source-size-comparison.jpg",
+      "generation-v2/source-turntable-01.jpg",
+      "generation-v2/start-attempt-1.png",
+      "generation-v2/start-attempt-2.png",
+      "generation-v2/start-attempt-3.png"
+    ],
+    "linear_images": [
+      "generation-linear-v2/source-home-01.img",
+      "generation-linear-v2/source-home-02.img",
+      "generation-linear-v2/source-home-glow.png",
+      "generation-linear-v2/source-plan-01.png",
+      "generation-linear-v2/START.png",
+      "generation-linear-v2/END-attempt-1.png",
+      "generation-linear-v2/END-attempt-2.png",
+      "generation-linear-v2/END-attempt-3.png",
+      "generation-linear-v2/END.png"
+    ],
+    "historical_page_fact_sources": ["generation-v2/plan.json", "generation-linear-v2/plan.json"],
+    "current_live_page_facts_verified": false,
+    "image_observations": [
+      "All three Peak source images show front-facing bags. The size comparison contains two bags and is unsuitable as the sole identity source for a single 20L subject. None supplies a verified rear view.",
+      "The three existing Peak START attempts are front-facing wide white-canvas interpretations. They are not evidence for a portrait rotation or exact hidden geometry. The tiny lower-right flap mark is not legible enough here to approve an exact-logo claim; textile and fine construction require source-detail review before exact-product use.",
+      "Linear source-home-01 is a dark shape/shadow plate with transparency rather than a rendered homepage. The glow sources depict a near-black field with a broad pale lower glow. The planning image is actual dark UI context, used here only for palette and theme.",
+      "Existing Linear generated frames contain three long graphite rails and one violet sphere. The overall group spans far more than the central 31.64 percent width available to a full-height 9:16 crop. A crop of those frames would cut rails; the new B response redesigns the illustrative group to fit the shared region instead of approving the old frames.",
+      "The old Linear END variations differ in apparent framing and object scale. This visual inspection does not quantify exact 2 percent scaling or certify sphere-to-rail ratios; no old pair was reapproved as an exact uniform transform."
+    ]
+  },
+  "cases": [
+    {
+      "id": "A",
+      "response": "A-response.md",
+      "actual_status": "requested shot pending",
+      "delivered_prompt_blocks": 0,
+      "request_fit": "pass as a pending response",
+      "helpfulness": "pass",
+      "fidelity": "pass for refusing unsupported rendition; resulting images unverified",
+      "capability_honesty": "pass",
+      "actual_outcome": "The response explains 360/front-to-rear incompatibility and 72 degrees per second, asks a focused front-to-front versus half-turn decision, requests exact rear/side/detail references, and explains the START-only endpoint limit. It does not deliver an unsolicited front-push replacement.",
+      "unresolved": ["User must resolve full-turn versus rear-end priority.", "Verified views of the visible side/rear geometry and detail references are absent.", "One-image video tool cannot enforce an END image.", "Exact logo/fabric preservation remains unverified."]
+    },
+    {
+      "id": "B",
+      "response": "B-response.md",
+      "actual_status": "complete prompt-only handoff",
+      "delivered_prompt_blocks": 3,
+      "request_fit": "pass at prompt level",
+      "helpfulness": "pass",
+      "fidelity": "pass for nonliteral framing and dated fixture labeling; rendered fit unverified",
+      "layout": "pass as a design plan; output crop and contrast unverified",
+      "capability_honesty": "pass",
+      "actual_outcome": "Two standalone endpoint prompts and a dual-input video prompt specify one compact central rail/sphere group, desktop white HTML copy on the left and a central portrait crop. Mobile text moves above the media. The 2 percent uniform transform scales sizes and gaps together without a pixel-identical contradiction.",
+      "unresolved": ["Generated crop, negative-space contrast and intermediate-frame continuity need actual outputs.", "Current Linear homepage rendering and facts were not checked live.", "New narrower composition is intentionally a new illustration; it is not validated by old wide frames."]
+    },
+    {
+      "id": "C",
+      "response": "C-response.md",
+      "actual_status": "END/video pending loop decision",
+      "delivered_prompt_blocks": 0,
+      "request_fit": "pass as a pending response",
+      "helpfulness": "pass",
+      "fidelity": "pass; fictional room permits invented scene but not an impossible endpoint join",
+      "capability_honesty": "pass",
+      "actual_outcome": "Turkish response asks only the necessary choice between distinct-angle one-pass output and a complete cycle returning camera/table to initial state. It keeps the same fictional room and sunset light, does not silently call END a midpoint, and does not claim a flawless rendered loop.",
+      "unresolved": ["User must choose which conflicting endpoint/loop requirement can change.", "If a full cycle is selected, explicit total duration, return action and table reset must be planned before full prompts.", "Any future loop join requires rendered position, velocity, exposure and motion inspection."]
+    },
+    {
+      "id": "D",
+      "response": "D-response.md",
+      "actual_status": "complete authorized fallback prompt-only handoff",
+      "delivered_prompt_blocks": 3,
+      "request_fit": "pass because the user explicitly delegated this fallback",
+      "helpfulness": "pass",
+      "fidelity": "pass for source-preserving editing plan and explicit limitation; output identity unverified",
+      "capability_honesty": "pass",
+      "actual_outcome": "The response selects the delegated front-only 2 percent push, preserves 9:16, supplies two complete source-edit prompts and one complete START-only video prompt. END is explicitly only a guide for the one-image tool. It requests preservation of the source photographic layer and says to stop if the editor redraws the bag instead of promising exactness through prompting.",
+      "unresolved": ["Whether the image/video tool actually preserves source fabric, hardware and logo has not been executed or verified.", "Uniform image-plane resampling changes apparent pixel sizes; exact source identity is a QA gate, not a prompt guarantee.", "No front-push video was rendered or tested."]
+    },
+    {
+      "id": "E",
+      "response": "E-response.md",
+      "actual_status": "complete full-turn prompt-only handoff",
+      "delivered_prompt_blocks": 3,
+      "request_fit": "pass at prompt level",
+      "helpfulness": "pass",
+      "fidelity": "pass for explicitly defined original six-face object; rendered rigidity unverified",
+      "capability_honesty": "pass",
+      "actual_outcome": "The response proceeds with the compatible requested shot. It defines all six fictional rigid faces, a fixed camera and one full clockwise turn at 72 degrees per second over five seconds with quarter-turn timings. START and END are front-facing; the video prompt explicitly prevents a static clip or crossfade between matching endpoints. It does not replace rotation with a push or demand real-world rear references for an original illustration.",
+      "unresolved": ["Endpoint conditioning may collapse identical poses into a static shot; full-turn count and intermediate geometry need rendered inspection.", "All six faces must remain rigid even when hidden; text cannot prove that occurred.", "Any portrait export requires checking the widest intermediate orientation."]
+    },
+    {
+      "id": "F",
+      "response": "F-response.md",
+      "actual_status": "faithful amenity shot and label pending evidence",
+      "delivered_prompt_blocks": 0,
+      "request_fit": "pass as a pending response",
+      "helpfulness": "pass",
+      "fidelity": "pass for blocking unverified real-property addition",
+      "capability_honesty": "pass",
+      "actual_outcome": "The response requires a same-room real table reference and property confirmation of the breakfast amenity before writing that verified claim. It offers only a brief explicitly fictional alternative, without silently completing it, and says actual fixture pixels were not inspected.",
+      "unresolved": ["Same-property table reference and amenity confirmation are missing.", "The single-photo fixture cannot support new room angles or invented amenities.", "A future table action must be physically specified; appearance by morphing would violate faithful continuity."]
+    }
+  ],
+  "unresolved_material_findings": [
+    {
+      "id": "U1",
+      "type": "runtime verification gap",
+      "severity": "material before claiming production readiness",
+      "finding": "This rerun proves six actual prompt-only responses and local-image inspection only. It does not test fresh image conditioning, video generation, full-turn rigidity, loop joins, host installation or mobile playback.",
+      "affected_cases": ["B", "D", "E"],
+      "next_evidence": "Execute authorized output generation and inspect the actual result, keeping still quality separate from intermediate video quality."
+    },
+    {
+      "id": "U2",
+      "type": "unresolved user/source constraints",
+      "severity": "blocks those requested handoffs",
+      "finding": "A, C and F correctly remain pending; their pending stages must not be counted as completed requested shots.",
+      "affected_cases": ["A", "C", "F"],
+      "next_evidence": "Resolve the angle/cycle choices and supply the missing literal references or amenity evidence."
+    }
+  ],
+  "skill_defects_observed_in_this_rerun": [],
+  "usability_notes": [
+    "Pending responses state one concrete next choice or evidence bundle instead of returning a vague next-action label.",
+    "Resolved responses contain exactly two endpoint prompts and one compatible video prompt; no alternative provider blocks or fake parameters are added.",
+    "D explicitly uses the delegated fallback, while A does not. E demonstrates that compatible full-turn requests can proceed without a needless clarification.",
+    "The complete prompts are long because they are standalone. All can be copied independently; summaries and caveats stay outside the blocks."
+  ],
+  "overall": "Prompt-level behavior passes these six fixtures. Three handoffs are complete in prompt-only mode and three requested jobs remain correctly pending. No fresh media or platform execution claim is supported."
+}

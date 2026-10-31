@@ -8,6 +8,14 @@ Sıra: gerçek host formatlarını ve kaynak siteleri incele; çekirdeği ve ref
 
 Yayın kapısı: üç farklı sektörün URL-only örnekleri, görsel araçlı ve prompt-only yollar, erişilemeyen site, görsel tutarlılık ve hareket uygulanabilirliği kanıtları hazır olmadan GitHub'a yükleme yapılmaz. Claude çalıştırma erişimi yoksa belgelenmiş destek ile gerçek çalıştırma ayrı raporlanır. Gizli veri, önceki müşteri yazışmaları ve yetki dosyaları pakete alınmaz.
 
+## v0.2.2: açık çekim talebini koruma
+
+Bağımsız A denemesinde kullanıcı360 derece/önden arkaya çekim istedi. Mevcut skill özgün çekimi engelli diye doğru etiketlerken yine de tam bir önden%2 yakınlaşma teslimi hazırladı. Bu, etiket dürüstlüğünü sağlar ama istenen işi karşılamaz. Kök çelişki: tam iki prompt teslim şartının, kaynak/çekim imkânsızlığında durma şartına önceliği belirsizdi; küçük hareket kuralı da varsayılan yerine mutlak yazılmıştı.
+
+Dar düzeltme: iki uçlu tam teslim yalnız çözümlenmiş uygulanabilir çekim içindir. Açık hareket, son açı, süre, oran ve sadakat korunur; maddi çelişki veya eksik arka görünümde ilgili END/video bekler. Kullanıcı önceden alternatif seçimini devretmişse izin verilen alternatif uygulanır. Döngüde tam çevrim ile END'in rolü ayrı açıklanır; geri oynatma tek yönlü fiziksel hareket için evrensel çözüm değildir.
+
+Test kapsamı bu metin/karar değişikliğidir: donmuş başarısız baz yanıtı, güncel skill ile bağımsız yeniden kullanım ve olumlu/olumsuz karşı örnekler. Eski gerçek kaynak araştırması ve görsel çiftleri tarihsel kanıt olarak korunur; yeni görüntü/video üretimi veya bütün hostlarda yürütme gibi sayılmaz.
+
 ## v0.2.0 iyileştirmesi
 
 Kullanıcının yeni tercihi: Codex her yeni işte açık seçim yoksa görselleri üretmek ile yalnız prompt hazırlamak arasında bir kez sorar. URL tek proje girdisi olmaya devam eder; bu soru ek yaratıcı brief değildir. Aynı işte revizyon ve onarımlar seçimi korur. Yanıtsız soru veya araç mevcudiyeti üretim seçimi sayılmaz. Bakım talepleri normal üretim işi değildir.

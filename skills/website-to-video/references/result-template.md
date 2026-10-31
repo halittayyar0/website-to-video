@@ -4,6 +4,8 @@ Use actual decisions and source URLs; replace these field descriptions rather th
 
 Before this result, resolve the Codex output-mode question if needed; an unanswered choice is not a completed result. Once selected, name the mode briefly without repeating the question.
 
+Use the full structure below for a resolved feasible shot. If a material requirement conflicts or a literal reference is missing, give the specific pending stage and one focused question/needed source instead. Include a source-faithful START only when independently useful; do not force two endpoints, write an invented rear view, or expand an unchosen fallback into the completed handoff. Distinguish the requested job's status from any brief alternative suggestion.
+
 1. **Site and concept:** 3–5 sentences in the user's language. Offer, audience, CTA, selected page placement and why this scene serves it. Separate verified facts from illustrative direction. Add a compact source ledger with access limitations, including the actual image/reference inspected.
 2. **START:** the generated image and saved path, or a complete English image prompt in its own copyable block. If generated, include the prompt too for reproducibility.
 3. **END:** the generated image and saved path, or a complete English prompt in its own block. State which actual START image was attached. If prompt-only, give the explicit attach-START instruction inside the prompt.

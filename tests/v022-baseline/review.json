@@ -1,0 +1,123 @@
+{
+  "suite": "website-to-video-v0.2.2-independent-prompt-only-forward",
+  "date": "2026-10-31",
+  "baseline_responses_frozen": true,
+  "scope": {
+    "skill": "outputs/website-to-video/skills/website-to-video/SKILL.md",
+    "references_read": ["references/mode-selection.md", "references/production.md", "references/result-template.md", "references/evaluation.md"],
+    "evidence_kind": "Actual authored response artifacts under fixture-only task constraints; evaluated semantically after creation, not keyword-only acceptance.",
+    "current_live_source_verification": false,
+    "media_generation_calls": 0,
+    "paid_service_calls": 0,
+    "video_rendered_or_tested": false,
+    "production_or_skill_files_modified": false,
+    "fixture_image_inspection": [
+      "work/website-to-video/generation-v2/source-turntable-01.jpg",
+      "work/website-to-video/generation-v2/source-black-20l.jpg",
+      "work/website-to-video/generation-linear-v2/source-home-glow.png",
+      "work/website-to-video/generation-linear-v2/source-plan-01.png"
+    ],
+    "fixture_fact_sources": [
+      "work/website-to-video/forward-tests/peak-prompts-v2.md:1-25",
+      "work/website-to-video/forward-tests/linear-prompts-single-input-v2.md:1-25"
+    ],
+    "fixture_fact_handling": "Only historical public-source context was used; prior creative prompts and assertions of successful production were not adopted as instructions or current proof. Hotel is entirely fictional."
+  },
+  "cases": [
+    {
+      "id": "A",
+      "artifact": "case-a-peak.md",
+      "original_scope": "9:16 literal black 20L product, exact logo/fabric, slow 360-degree turn in five seconds, front START/rear END, single-image target, prompts only",
+      "overall": "blocked-original-request; transparent-but-unsolicited-substitute-delivered",
+      "checks": {
+        "no_generation": "pass",
+        "honest_fixture_and_output_labels": "pass",
+        "requested_rotation_and_rear_endpoint": "fail",
+        "requested_single_input_compatibility_of_delivered_video_block": "pass",
+        "literal_original_product_accuracy": "unverified",
+        "rear_geometry": "blocked",
+        "generated_crop_and_continuity": "unverified"
+      },
+      "outcome_evidence": [
+        {"lines": "3-5", "finding": "Recognizes that a complete 360-degree turn returns front-to-front, while rear END needs a different angle; front-only source photos do not support literal rear reconstruction. Explicitly says alternative does not fulfill original request."},
+        {"lines": "11-34", "finding": "Despite the block, supplies two complete front-view still prompts and a front-only 2-percent push video handoff. Honest labeling does not make this requested-scope completion. This is an unsolicited alternate deliverable, not an unauthorized external action or a successful requested orbit."},
+        {"lines": "29-34", "finding": "Video block uses only supplied START and describes a guided final state; does not ask the target to use an unavailable END input."},
+        {"lines": "9-18", "finding": "Exact logo/fabric use is conditional on subject-layer preservation; text prompting does not establish that an unspecified editor can preserve the subject or that output has passed identity review."}
+      ],
+      "required_next_input_for_original_scope": "Resolve 360-degree/front-rear contradiction and provide trusted rear/side imagery or real turntable footage. Exact logo/fabric and intermediate geometry still need output-level review.",
+      "better_boundary": "Keep rear END and requested motion pending; provide source-faithful START only if useful, and offer the front-only alternative as an option rather than handing it off as the replacement job."
+    },
+    {
+      "id": "B",
+      "artifact": "case-b-linear.md",
+      "original_scope": "16:9 abstract homepage hero, white headline left, portrait mobile crop preserves subject, dual endpoints, prompts only",
+      "overall": "pass-prompt-design; actual-media-and-site-results-unverified",
+      "checks": {
+        "no_generation": "pass",
+        "source_vs_illustration_distinction": "pass",
+        "two_complete_still_prompts": "pass",
+        "attach_start_in_end": "pass",
+        "dual_input_video_compatibility": "pass",
+        "crop_math_and_mobile_copy_treatment": "pass",
+        "actual_crop_and_copy_contrast": "unverified",
+        "current_website_fit_and_video_execution": "unverified"
+      },
+      "outcome_evidence": [
+        {"lines": "3-7", "finding": "Clearly distinguishes historical fixture facts from design; labels motif nonliteral, computes the 16:9-to-9:16 shared crop and explicitly moves desktop-left copy above media on mobile."},
+        {"lines": "7-24", "finding": "Subject intended x=46-62 percent; uniform 1.02 scale about x=54 gives x=45.84-62.16, inside x=34.18-65.82 portrait crop. No contradiction between scaling and fixed pixel dimensions."},
+        {"lines": "22-32", "finding": "END attaches accepted START; video names both supported endpoints, repeats scene, invariants and timing without provider-specific flags."},
+        {"lines": "35", "finding": "Does not promote planned crop or dark copy area to measured output or tested contrast; no render/playback claim."}
+      ],
+      "remaining_limits": ["Real motif bounds and intermediate frames", "White headline contrast in consuming page", "Current homepage placement and responsive behavior", "Actual generation and video execution"]
+    },
+    {
+      "id": "C",
+      "artifact": "case-c-hotel-tr.md",
+      "original_scope": "Turkish prompts-only; one room and fixed sunset; infinite perfect loop; distinct-angle START/END; breakfast table appears midway; no real room photo",
+      "overall": "partial-prompt-design; perfect-loop-request-blocked-until-compatible-playback-and-render-validation",
+      "checks": {
+        "no_generation": "pass",
+        "fictional_not_real_property": "pass",
+        "single_room_and_fixed_sunset": "pass",
+        "breakfast_continuity_assumption_disclosed": "pass",
+        "three_english_standalone_prompt_blocks": "pass",
+        "distinct_angle_finite_shot": "pass",
+        "direct_seamless_loop_with_distinct_endpoints": "blocked",
+        "actual_three_degree_table_reveal": "unverified",
+        "forward_reverse_seam_quality": "unverified",
+        "video_endpoint_support": "unverified"
+      },
+      "outcome_evidence": [
+        {"lines": "3-8", "finding": "Calls room fictional, explicitly supplies no source/real-hotel claim; breakfast setting is a scene design choice already present, not an invented hotel service."},
+        {"lines": "16-18", "finding": "END is START-referenced; one small fixed-position pan changes angle while keeping room, objects and sunset fixed."},
+        {"lines": "24-30", "finding": "Video support remains conditional. Delivers finite source shot and names later forward/reverse playback as an alternative to direct reset. Does not promise a verified perfect loop."},
+        {"lines": "3,26,30,33", "finding": "Interprets midway appearance as revealing a pre-existing partially clipped table and infinite loop as a later ping-pong presentation. Both interpretations are disclosed but do not prove the original exact visual outcome. Three degrees may be insufficient to reveal the intended table area; needs actual frame inspection."}
+      ],
+      "remaining_limits": ["No real room fidelity can be established without source imagery", "Loop reversal joins and perceptual quality", "Table visibility and intended timing", "Tool input capability", "All media execution"]
+    }
+  ],
+  "substantiated_skill_weaknesses": [
+    {
+      "severity": "medium",
+      "location": "SKILL.md deliver-exactly-two rule; Produce the two moments stop-literal rule; result-template.md exactly-two rule",
+      "finding": "No explicit precedence for an impossible literal motion/end-state brief. A met output-count and compatibility rules by completing a different front-only handoff, even after correctly blocking the original request.",
+      "evidence": "case-a-peak.md:3-5 versus 11-34",
+      "suggestion": "State that impossible or ungrounded requested endpoints stay pending, exactly-two delivery is suspended for a blocked original, and an unsolicited fallback must not replace scope completion. Offer any alternative separately and obtain choice before treating it as the new job."
+    },
+    {
+      "severity": "low",
+      "location": "Understand before designing; production.md feasible shot guidance",
+      "finding": "No explicit angle-closure check or speed calculation. Skill guidance supported a cautious response, but A required independent geometry reasoning to catch the front/rear versus 360-degree contradiction.",
+      "evidence": "case-a-peak.md:3",
+      "suggestion": "For rotations, check net endpoint angle and amount/duration before prompt drafting; distinguish 180-degree rear reveal from 360-degree return."
+    },
+    {
+      "severity": "low",
+      "location": "Video and handoff loop statement; production.md endpoint continuity",
+      "finding": "Distinct endpoints are correctly disallowed as an automatic loop, but there is no concrete handling of requests combining different angles, a guaranteed perfect loop and object appearance. C supplied a reasonable reveal-plus-ping-pong interpretation, yet exact reveal timing and loop quality remain unresolved.",
+      "evidence": "case-c-hotel-tr.md:3,26-33",
+      "suggestion": "Require requested loop closure and object existence to be reconciled explicitly. A reverse-playback option should remain an offered presentation choice, never proof that source footage itself is seamless."
+    }
+  ],
+  "overall_conclusion": "Prompt-only safety, compatible one/two-input prompts, fixture honesty, crop reasoning and loop non-guarantee behaved well. Original-scope completion is not all-pass: A is blocked and its full alternate handoff is a scope weakness; C has a disclosed alternate playback interpretation with exact loop quality unverified. This suite is not evidence of new site research, host installation, media generation, literal-product fidelity, or tested video."
+}

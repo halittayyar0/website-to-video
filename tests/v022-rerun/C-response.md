@@ -1,0 +1,3 @@
+Farklı açılardaki START ve END kareleri doğrudan birleşince kusursuz döngü kapanmaz; beliren kahvaltı masasının da başlangıç durumuna dönmesi gerekir. Bu nedenle END ve video promptu, döngü kararı netleşene kadar bekliyor.
+
+**Farklı START/END açılarını koruyan tek geçişi mi, yoksa kamera ve masa başlangıç durumuna dönerken END’in START ile eşleştiği tam döngüyü mü seçiyorsunuz?** İkinci seçenekte dönüş hareketini toplam süreye açıkça dahil edeceğim; END’i habersizce orta kareye çevirmeyeceğim. Kurgusal tek oda ve sabit gün batımı ışığı her iki seçenekte korunabilir. Görsel veya video üretilmedi; kusursuz döngü doğrulanmadı.

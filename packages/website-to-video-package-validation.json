@@ -1,31 +1,29 @@
 {
-  "status": "archive checks passed; host execution limits remain in TEST-REPORT.md",
-  "claudeReadme": "Adapted to skill-root layout; test report uses repository URL because evidence examples are not bundled in minimal Claude ZIP. Core bytes are unchanged.",
+  "version": "0.2.2",
+  "scope": "Syntax, links, source/archive byte equality and installation; not host/media execution",
   "archives": [
     {
       "archive": "website-to-video-openai-plugin.zip",
-      "files": 34,
-      "sha256": "aa5ea1df5faac948f530c8f65010e5a44ebf1cb960741d0a87d1101856e2204d",
+      "files": 46,
+      "sha256": "e0944627b7d6a4d8bcfe8a53ed3c724c0bd9dc16c3c649e3dbb48a2dc45b7740",
       "byteComparison": "pass",
       "paths": "pass",
-      "symlinks": "none",
       "internalMarkdownLinks": "pass"
     },
     {
       "archive": "website-to-video-claude.zip",
       "files": 7,
-      "sha256": "ad0f0ef6b231ff32429c40c62739a4d873990a71b15dfb53820f833c6b47ccf6",
+      "sha256": "5925a8a445f7f582593002c424a133a9626d8d3e7f3ab8a90d1cef32ab566055",
       "byteComparison": "pass",
       "paths": "pass",
-      "symlinks": "none",
       "internalMarkdownLinks": "pass"
     }
   ],
   "sourceFiles": {
-    "DESIGN.md": "f6224d2d9cf1e4a3dd37fb639d4f80547fb485d11d2ec6da593fd1706373690d",
-    "plugin.json": "91fe8b7a0a5202dde24acfc1d8fb8956405e7aff2afee75a7432e9fafe2a7700",
-    "README.md": "1a975d29a18ea5268ec73cc6495a7c10b471e8308d22b84ab6314529ec9b44e1",
-    "TEST-REPORT.md": "fc2e344e95de2b4901993535d80a0b8b194b2b81c3faf45698442c2073254471",
+    "DESIGN.md": "ecc79712c9faec919671464709501c0d2d7dd65696fd2b3b38fcb525523454f1",
+    "plugin.json": "a38c6a9d5b885ef1d92e9f6a4aead687cae70899d249cec52eb791944117b383",
+    "README.md": "ff754ed68a74d5a64426d2d392f81ad2c4ba9b391cc2281c53038297851e46f1",
+    "TEST-REPORT.md": "b89111d442799ddd215a3df53a48257d464645b44855e0f228d399c66e4c135d",
     "examples/injection-check.md": "635e0f49257da8faccc8eec70b006b8645a01fc29ba005a0595158f8519e5afe",
     "examples/naples.md": "fcdd919b5d15faf6a00acc7bbd614df4e33249cc4b23829c9cbcf36e6a36c2fb",
     "examples/peak-design.md": "34d5874a66792ffdb51ab6736e9224454de64f210cb2e0da5023fd4076d7a1f3",
@@ -37,12 +35,12 @@
     "examples/linear-v2/END.png": "6d64ad6a0deb11378b15a3b00e427f7bd4a1b951c8c9f5d8f78f4f28b43c1db0",
     "examples/linear-v2/RESULT.md": "3fa8a79a5b26f47f1f3440a6642635d48a14c5a92a93f076972fbe55a3ce215e",
     "examples/linear-v2/START.png": "697afb7f5e1e1c88d26001d85b87ad9ff0136abec97e54e6f4762cf66ec71d5b",
-    "skills/website-to-video/SKILL.md": "81d444fdaa2220ecd3f33c2c5bd903cc46d46e1c628b7fa60641223062941035",
+    "skills/website-to-video/SKILL.md": "5ebd0814874f44e2d538549fbc01b3a58b4dc0779d91a060f1eeaa084c94a196",
     "skills/website-to-video/agents/openai.yaml": "0de89a51f0fb140a143e66885e1ce823cbea6f0de19f53898059c379a096904c",
-    "skills/website-to-video/references/evaluation.md": "06510e5312efbaaf49b1f089976f566bba2d54c8c66fbccc1028009e8d2e3bde",
+    "skills/website-to-video/references/evaluation.md": "5f5d8d150b49e9295e8f87088b528018a4264fff43b5609b1276dba88868c241",
     "skills/website-to-video/references/mode-selection.md": "8030877dae22ed674766984125fbc8ad70a90bbe8c0ad40a325c0e01124241cc",
-    "skills/website-to-video/references/production.md": "926a9cc2b0ae21cbfa60d8b57592d56f94882ce6bbbc82035e09ebd790eaaa6d",
-    "skills/website-to-video/references/result-template.md": "f09958add7cb13d539f9dcc446c01a1a7a27b20498e1087cd991583e996264c6",
+    "skills/website-to-video/references/production.md": "d4a4dca7c2daba7599843fefab330c9cac1c88b186678d77dc35ebe50e06f3a0",
+    "skills/website-to-video/references/result-template.md": "c9bfd4478107742e27c50a66916b08365ea5c0d4e5d32bafc09d0a842b7d49ec",
     "tests/delivery-delta-review-v2.json": "2ada5ca40a14c873e6027773467f7da061e89cb8da44260629aec915eb13ee2d",
     "tests/linear-generation-v2.json": "d0912124dd96d3411ac12b931aec25d2e259a342a64d78529864fdd9748d5816",
     "tests/linear-prompts-single-input-v2-execution-scope.json": "91f7b6b96a872fe28e9a3d393c734290c8c35cedb3901b91ae7c83e89507a7b7",
@@ -55,6 +53,18 @@
     "tests/peak-prompts-v2-execution-scope.json": "75570efa7deb3250905bd6184b1459d77dba0a9b3a117182511b8f9037b54384",
     "tests/peak-prompts-v2.md": "099b27b952f87f097cf4ef15128591f93d314dc2d5495124d1850ec25ca9aa8b",
     "tests/quality-review-v2.json": "c88f186ecc29a082f4f6127de39f818fa5254be03a67d373b691b58d4f927a5a",
-    "tests/unreachable-v2.json": "f851b3a4437d838b8b3250a864cbeaf72d9b9d2db5e375f10044fbf5ef3a734f"
+    "tests/unreachable-v2.json": "f851b3a4437d838b8b3250a864cbeaf72d9b9d2db5e375f10044fbf5ef3a734f",
+    "tests/v022-baseline/case-a-peak.md": "f610c3beca8043a99b1f2e00200a29ceb84c673dd9454ecb60920087442aaa91",
+    "tests/v022-baseline/case-b-linear.md": "de9178ab20fcf02fd7af416e9e5095e2b34602c52ab76204a5477ab6cddd0394",
+    "tests/v022-baseline/case-c-hotel-tr.md": "7331b42947e85487f60b2e1b06618d93d5e64e6801741ed0bbe0d4c2bae1bdad",
+    "tests/v022-baseline/provenance.json": "e86131b6ae963b59cb28987df535515fd19d30ac0e200094c868f337836a7c87",
+    "tests/v022-baseline/review.json": "4adecf990e51d9d342ce17c0b7b78021865630ba37d563634fa06af1caab6199",
+    "tests/v022-rerun/A-response.md": "022eea4da1daa8e448b1659724cc586e88941ffa4df69eee20512d1053b72952",
+    "tests/v022-rerun/B-response.md": "7f7930bc6b74476c37277b98c9b73ab0ae663d56cf1c3130ce58436fb2656c83",
+    "tests/v022-rerun/C-response.md": "cf1c9f0321b6a8f06c4839d5a98b82bce7e89eb6ecd01ca07308e534180ebaea",
+    "tests/v022-rerun/D-response.md": "6e6d30f3452c72f0f7a8c61aef195e69d4b35e4ac5308b98928eb6fa7462fe11",
+    "tests/v022-rerun/E-response.md": "6c2d57631352461a32b016bc1c07eb7856564e09f8781070d25ea4e1163e28cb",
+    "tests/v022-rerun/evaluation.json": "528a11d59f325b0d0f8cc1e7440439c3c6228415016356e427f0021b2cf557bf",
+    "tests/v022-rerun/F-response.md": "c51f9e5ad15c13fdaa7637416b734c8e3c9c8302b0490d225ffb78e9c791ce6b"
   }
 }

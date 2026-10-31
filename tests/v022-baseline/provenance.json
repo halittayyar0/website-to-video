@@ -1,0 +1,24 @@
+{
+  "evaluatedSkillVersion": "0.2.1",
+  "baselineCommit": "a688cd4e9b9e1384d29defcac2d728ff514c4c57",
+  "skillCanonicalLF_SHA256": "81d444fdaa2220ecd3f33c2c5bd903cc46d46e1c628b7fa60641223062941035",
+  "note": "Campaign filenames usev022; these frozen responses were authored againstv0.2.1 before changes. Relative raw-source fixture paths refer to local scratch, not bundled photographs. No media or live research executed.",
+  "artifacts": [
+    {
+      "file": "case-a-peak.md",
+      "sha256": "f610c3beca8043a99b1f2e00200a29ceb84c673dd9454ecb60920087442aaa91"
+    },
+    {
+      "file": "case-b-linear.md",
+      "sha256": "de9178ab20fcf02fd7af416e9e5095e2b34602c52ab76204a5477ab6cddd0394"
+    },
+    {
+      "file": "case-c-hotel-tr.md",
+      "sha256": "7331b42947e85487f60b2e1b06618d93d5e64e6801741ed0bbe0d4c2bae1bdad"
+    },
+    {
+      "file": "review.json",
+      "sha256": "4adecf990e51d9d342ce17c0b7b78021865630ba37d563634fa06af1caab6199"
+    }
+  ]
+}
