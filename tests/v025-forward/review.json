@@ -1,0 +1,34 @@
+{
+  "test": "v025-forward",
+  "type": "bounded fixture behavior test",
+  "live_research": false,
+  "generation_calls": 0,
+  "external_mutations": 0,
+  "prior_reports_read": false,
+  "overall": "pass_with_unverified_execution",
+  "cases": {
+    "A": {"behavior": "pass", "mode": "pending_user_choice", "creative_questions": 0, "next": "wait for delivery choice; optional read-only research"},
+    "B": {"behavior": "pass", "mode": "prompts_only", "creative_questions": 0, "next": "write source-supported standalone prompts"},
+    "C": {"behavior": "pass", "mode": "generation_selected_test_suppressed", "creative_questions": 0, "next": "native START generation then source review, only outside test"},
+    "D": {"behavior": "pass", "mode": "prompts_only", "creative_questions": 0, "next": "write prompts preserving all explicit constraints"}
+  },
+  "checks": {
+    "fixture_vs_research_honesty": "pass",
+    "creative_decision_ownership": "pass",
+    "explicit_wish_preservation": "pass",
+    "mode_handling": "pass",
+    "no_unjustified_preset_or_concept_approval": "pass",
+    "authority_limits": "pass",
+    "actual_source_visual_review": "unverified",
+    "generated_pair_continuity": "unverified",
+    "rendered_video_and_playback": "unverified"
+  },
+  "notes": ["B requires the actual source-supported baking endpoint states before literal prompting; the fixture does not establish a specific raw-dough shape.", "C uses labeled abstract coordination illustration, not invented real UI behavior.", "Passing this bounded exercise is not a production or platform-execution pass."],
+  "sha256": {
+    "SKILL.md": "CF17207C53BBB5616B1E629F5D4CA7D9BBBE3BD9FA9AE71384D5B8EB8662FAE0",
+    "references/mode-selection.md": "33B9A37681708A6B42670E9A6403F8460CD94986881C8FD9DB98B83269B90D6E",
+    "references/production.md": "D7DE2E5D63AC79683F8585F571AFEB02A2B28319EA27E246C16AE708579D8FDA",
+    "references/result-template.md": "3EAAE6BDE251B34CF538D2323BFE19DFA890315A87BB166C50B1638D7D729920",
+    "references/evaluation.md": "7941DE3E57088329C6960BFD31FC1BA8CFC2EA354EA28D4B2ED0334ACC360536"
+  }
+}

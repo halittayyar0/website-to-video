@@ -1,5 +1,9 @@
 # Tasarım ve çalışma planı
 
+## v0.2.5: yaratıcı brief zorunlu değil
+
+Sadece site adresi veren kullanıcı, belirtilmemiş yaratıcı kararları ajana bırakmış sayılır. Araştırmadan sonra tek uygulanabilir yön seçilir ve iş yürütülür; sahne/stil/kamera listesi veya rutin konsept onayı istenmez. Önceki beş saniye, 16:9 veya ürün eylemi örnekleri evrensel şablon değildir. Kullanıcı açık gereksinim verirse o gereksinim korunur. Mod sorusu yalnız çıktı tercihidir; yaratıcılık onayı değildir. Bu serbestlik ürün hakkında gerçek uydurma veya yetkisiz harcama/yayın/mesaj hakkı vermez.
+
 ## v0.2.4: ürüne özel eylem, kamera farkından ayrı
 
 Kullanıcı v0.2.3'teki daha büyük KUTAREL zoomunu da reddetti: kadraj farkı ile sahne eylemi aynı şey değildir. Yeni hedef yalnız daha fazla zoom değildir. Sahne sitenin gerçek ürünü, kullanım amacı, marka dili ve ziyaretçi eylemine göre seçilir; sabit bir hareket reçetesi uygulanmaz. START/ara eylem/END planlanmadan statik katalog başlangıcı üretilmez. Kamera sabitlenince de sahne eylemi anlaşılmalıdır. Gerçek ürün özelliği ile önerilmiş editorial staging ayrılır; fark yaratmak için gizli yüzey, üretim yöntemi veya malzeme yeteneği uydurulmaz. Açık kamera hareketi/mikro hareket/döngü brief'i geçerlidir. Bu bakım turunda kullanıcı yeni medya istemedi; yalnız skill davranışı ve mevcut dağıtımları değiştirilir.

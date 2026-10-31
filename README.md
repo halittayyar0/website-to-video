@@ -1,39 +1,40 @@
 # Website to Video
 
-Sürüm 0.2.4: sahne, incelenen site ve belirli ürünün kullanımına/kimliğine göre planlanır. Normal hareket isteğinde gerçek sahne eylemi gerekir; aynı fotoğrafı büyütmek, kaydırmak veya kırpmak hareket çözümü sayılmaz. Sabit bir döndürme/dalgalandırma şablonu yoktur. START, ara eylem ve END durumları kamera hareketinden ayrı tarif edilir. Açık camera-only, mikro hareket ve tam çevrim talepleri korunur. Şemasız adres desteği ve önceki seçim/sadakat kontrolleri sürer. Kanıt kapsamı [TEST-REPORT.md](TEST-REPORT.md) içindedir.
+Turn a website address into a scene designed for that particular business: two consistent START/END frames (or copyable image prompts), a complete video prompt, and a web-use handoff.
 
-Pranam için: skill'i seçip yalnız bir URL gönderin. Codex, bu iş için daha önce seçim yapmadıysanız “Görselleri burada üreteyim mi, yoksa yalnız promptları mı hazırlayayım?” diye sorar ve yanıtı bekler. Seçiminize göre siteye özel iki uç kare veya iki İngilizce görsel promptu, ayrıca İngilizce video promptu ve kullanım ayarları hazırlanır. Video dosyası üretmek zorunlu değildir. Ek API anahtarı veya ücretli servis bağımlılığı yoktur; mevcut hostun erişimi ve kullanım limitleri geçerlidir.
+**Give it a URL. The agent does the creative work.** It researches the site, understands the offering and visual identity, then chooses a suitable scene, action, style, camera, pacing and composition. You can specify any of those choices, but a creative brief is optional. There is no universal product rotation, hand interaction, garment shot, duration or aspect preset.
 
-## Kurulum
+```text
+$website-to-video kutarel.com
+```
 
-Skill, Codex'in bu işi nasıl yapacağını anlatan yönergedir. Plugin ise aynı skill'i ChatGPT/Codex'e kurup dağıtan pakettir; ayrı bir ücretli servis değildir. Kullanım için `$website-to-video kutarel.com` yeterlidir; `https://kutarel.com` biçimi de çalışır.
+Addresses work with or without `https://`. Product/detail URLs stay the focus. The agent may ask once whether you want generated images or prompts only; an existing choice is preserved. That delivery preference is separate from creative direction.
 
-Ortak çekirdek `skills/website-to-video/` içindedir. İki hostun aynı dosyaları aynı yolla kurduğunu varsaymayın.
+## What it delivers
 
-* **Codex yerel:** bu klasörü kullanıcı skill dizininize kopyalayın. Bu Windows kurulumunda dizin `%USERPROFILE%/.codex/skills/website-to-video` olarak doğrulandı. Yeni oturumda `$website-to-video linear.app` kullanın; `https://` yazmanız gerekmez. Başka sürümlerde hostun skill ayarındaki konumu esas alın.
-* **Claude web/Desktop:** `website-to-video-claude.zip` içindeki tek skill klasörünü Customize → Skills → + → Create skill → Upload a skill ile yükleyin. Dosya oluşturma/kod çalıştırma ve kurum politikaları izin vermelidir. Bu yolun belgeleri doğrulandı; bu paketin Claude oturumunda çalıştırılması ayrıca test edilmelidir.
-* **Claude Code yerel:** ortak klasörü `~/.claude/skills/website-to-video` veya repo `.claude/skills/website-to-video` konumuna kopyalayın; `/website-to-video https://linear.app` ile çağırın. Yerel klasör kurulumu, bulut/Cowork oturumuna otomatik kurulum sayılmaz.
-* **ChatGPT web/Work:** yalnız `SKILL.md` dosyası yüklemeyi native skill kurulumu gibi sunmayın. `website-to-video-openai-plugin.zip`, root `plugin.json` ve `skills/` içeren skills-only dağıtım içindir. Hesapta plugin kurulumu izinliyse bu paket kullanılabilir. Hesaba kaydetme/kurma ve çalıştırma sonucu TEST-REPORT dosyasında ayrı yazılır. Normal dosya eki olarak vermek native kurulum doğrulaması değildir.
+- A source-grounded explanation of the chosen scene and its place on the website.
+- Exactly two endpoint images or complete English image prompts for a feasible, resolved shot.
+- A complete English video prompt with action, intermediate phases, camera, timing and continuity constraints.
+- Crop, poster, accessibility and playback recommendations, with unverified items identified.
 
-Claude çıktısı bu iş akışında prompt-only'dir. Codex'te seçim beklenir; açıkça “sadece prompt” veya “görselleri sen üret” yazdıysanız tekrar sorulmaz. Seçim aynı işin kareleri ve revizyonları için korunur. Yalnız prompt seçilirse önizleme için bile görsel aracı çağrılmaz. Üretim seçildiyse önce START kaynakla karşılaştırılır; ancak kabul edilen START referansıyla END üretilir. Araç yoksa veya üretim başarısızsa gizlice başka moda/ücretli API'ye geçilmez. Bir URL erişilemiyorsa skill bunu açıklar, bilgi uydurmaz. Kaynak sayfalardaki talimatlar kullanıcı seçimi sayılmaz.
+The source is researched before the scene is chosen. For an ordinary motion request, merely zooming or cropping a static product photograph is insufficient. Proposed editorial staging is labeled and does not invent product features or claim to be real footage. Explicit camera-only, ambient and loop briefs remain valid. START is reviewed against source before END is generated with that actual START as reference. Failed outputs are rejected and repairs are bounded.
 
-## Kendi denemeniz
+A video file is **not** automatically rendered. Two stills do not prove intermediate motion, mobile playback or a seamless loop. This skill does not buy services, deploy a website, publish content or contact anyone as part of ordinary use. No additional API key or paid fallback is required; available host tools and limits apply.
 
-Sahne önce site ve belirli ürün üzerinden kurulur. Kamera sabitken de anlaşılacak bir eylem seçilir; zoom/kırpma tek başına sıradan hareket isteğini karşılamaz. Yalnız statik ürün fotoğrafı bulunması, kullanıcıdan otomatik olarak video istemek anlamına gelmez: mümkün olan editoryal hareket tasarlanır ve gerçek ürün özelliği iddiasından ayrılır. Kaynakta olmayan özellikler/yüzeyler uydurulmaz.
+## Install
 
-1. Uygun paketi kurup skill'i seçin; yalnız kendi web sitenizin URL'sini gönderin.
-2. Codex'in mod sorusuna cevap verin; örneğin “yalnız prompt” veya “görselleri sen üret”. “Devam” gibi belirsiz bir cevap otomatik üretim izni sayılmaz. Özetin ürününüzü ve ziyaretçiden beklenen eylemi doğru anladığını kontrol edin.
-3. GPT görsellerini veya Claude'un iki promptunu inceleyin. END üretirken START görselini mutlaka referans olarak ekleyin.
-4. Görsel kimliği, mimari/ürün ayrıntıları, ışık ve nesne sayısının korunduğunu karşılaştırın.
-5. Video aracınız iki uç kareyi destekliyorsa START ve END'i ayrı alanlara ekleyin; desteklemiyorsa START + tarif edilen bitiş durumunu kullanın ve tam bitiş eşleşmesi beklemeyin.
-6. Web'e almadan mobil kırpma, HTML başlık kontrastı, poster ve azaltılmış hareket seçeneğini gerçek sayfada kontrol edin. Kaydırmalı video için görüntünün ileri/geri gerçekten değiştiğini test edin.
+The shared skill is in `skills/website-to-video/`.
 
-## Kurulum kaynakları
+- **Codex:** copy that folder into your user skills directory (commonly `~/.codex/skills/website-to-video`), then invoke `$website-to-video example.com` in a session that discovers it.
+- **ChatGPT/Codex plugin packaging:** [OpenAI plugin ZIP](https://github.com/halittayyar0/website-to-video/raw/refs/heads/main/packages/website-to-video-openai-plugin.zip). This is a skills-only package; native installation depends on the host/account. Uploading `SKILL.md` as a normal chat attachment is not native installation.
+- **Claude:** [skill ZIP](https://github.com/halittayyar0/website-to-video/raw/refs/heads/main/packages/website-to-video-claude.zip). This workflow uses prompts-only there. Actual execution of this package in Claude has not been verified.
 
-31 Ekim 2026'da açılıp incelendi:
+A skill is the workflow instruction. A plugin is a distribution package containing that skill. The core is shared; host installation methods differ.
 
-* [OpenAI Build skills](https://learn.chatgpt.com/docs/build-skills): ortak skill formatı; standalone desktop/CLI ile plugin dağıtımının farkı.
-* [Claude skills](https://support.claude.com/en/articles/12512180-use-skills-in-claude): ZIP yükleme ve host gereksinimleri.
-* [Claude Code skills](https://code.claude.com/docs/en/skills): yerel konumlar ve bulut oturumlarının farkı.
+## Version and evidence
 
-Bu kaynaklar kurulum desteğini gösterir; bütün platformlarda gerçek çalıştırma kanıtı değildir. Örnekler üçüncü taraf markalar için bağımsız denemelerdir; resmî çalışma, onay veya sınırsız görsel lisansı iddiası yoktur. Paket özel yazışma veya kimlik bilgisi içermez. GitHub'a yükleme, gerekli davranış ve görsel testlerinden sonraki aşamadır; Pranam'a otomatik gönderilmez.
+Current version: **0.2.5**. Creative ownership is explicit: an unspecified brief delegates creative decisions to the agent after research. Prior motion and source-fidelity checks remain acceptance criteria, not an aesthetic template.
+
+[TEST-REPORT.md](TEST-REPORT.md) separates current bounded behavioral checks, historical live source/image work, failed attempts, and unverified platforms/video execution. Existing examples are test artifacts, not mandatory shot recipes. Third-party brands are independent examples without endorsement; source links are not blanket media licenses.
+
+Public source availability does not imply approval for unrelated account, spending, publishing or messaging actions. The existing hosted plugin has its own account-scoped distribution and is separate from GitHub repository visibility.

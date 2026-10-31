@@ -4,7 +4,7 @@ Choose only decisions that support this site's visitor action. A shopping produc
 
 ## Request fit
 
-Keep the user's explicit subject, motion, end pose, duration, aspect, fidelity and playback requirements in the continuity record. Fill unspecified choices with the defaults; an easier shot is not a completed version of a different requested shot. If requirements are compatible and supported, proceed without an extra creative questionnaire.
+Keep the user's explicit subject, motion, end pose, duration, aspect, fidelity and playback requirements in the continuity record. Infer unspecified choices from research and make the creative decision; do not convert suggestions or previous examples into defaults that every site must follow. An easier shot is not a completed version of a different requested shot. If requirements are compatible and supported, proceed without an extra creative questionnaire or routine concept approval.
 
 When a conflict changes the shot, state it briefly and ask only the decision needed to resolve it. Keep the affected END/video pending while doing any independent source work. For example, a front-facing subject completing360 degrees returns to the front; a rear END is a half-turn. Ask which end pose/turn the user means rather than silently delivering a small front push. A label saying an alternative is different does not authorize substituting its complete handoff. Offer a brief alternative if useful; expand it after the user chooses it or has already delegated fallback selection.
 

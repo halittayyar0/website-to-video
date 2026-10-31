@@ -1,6 +1,14 @@
-# Website to Video, v0.2.4 test raporu
+# Website to Video, v0.2.5 test raporu
 
 31 Ekim 2026. Yerel Windows/Codex ortamında yapıldı. Belge desteği, dosya kurulumu, elle davranış testi ve başka istemcide gerçek çalıştırma ayrı değerlendirilir.
+
+## v0.2.5: yaratıcı karar sahipliği ve genel dağıtım
+
+Kullanıcı yaratıcı brief vermediğinde yalnız URL yeterlidir. Ajan siteyi/ürünü araştırır; konuyu, sahneyi, eylemi, stili, kamerayı, ritmi, süreyi, oranı ve kompozisyonu seçer, olağan bir konsept onayı için durmaz. Açık kullanıcı isteği önceliklidir. Örnek sahneler veya beş saniye/16:9 gibi önceki öneriler evrensel reçete değildir. Çıktı modu sorusu ayrı bir teslim tercihidir; yaratıcı brief veya tekrar eden onay kapısı olmaz. Kaynak doğruluğu, hareket tutarlılığı ve kanıt dürüstlüğü kalite şartı olarak kalır.
+
+Bağımsız [dört gerçek karar/plan yanıtı](tests/v025-forward/responses.md) ve [inceleme/hash kaydı](tests/v025-forward/review.json) geçti: yalnız URL'de tek teslim tercihi sorusu ve sıfır yaratıcı brief sorusu; fırın fixture'ında marka/ürüne dayalı sahne seçimi; yazılım fixture'ında açıkça temsili, gerçek arayüz iddiası taşımayan koordinasyon sahnesi; açık 9:16/8 saniye/sabit kamera/insansız çeşme isteğinin korunması. Süre/oran önceki önerilere zorlanmadı, konsept onayında durulmadı. Beş değerlendirilen dosya hash'i güncel kaynakla karşılaştırılır. Bunlar canlı kaynak araştırması veya medya üretimi değil, sağlanan öncüllerle davranış planlarıdır.
+
+Bu bakımda yeni medya veya yeni canlı site analizi yapılmadı. Güncel davranış denemeleri ve yerel kurulum/yayın kanıtları ayrı kaydedilir. README genel kullanıcıya göre düzenlendi. GitHub'ın herkese açılması ayrıca gerçek görünürlük ve anonim erişimle doğrulanır; eski private yayın kayıtları geçmiş durumdur.
 
 ## v0.2.4: siteye ve ürüne özel gerçek sahne eylemi
 

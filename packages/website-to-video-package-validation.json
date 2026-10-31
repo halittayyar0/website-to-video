@@ -1,11 +1,11 @@
 {
-  "version": "0.2.4",
+  "version": "0.2.5",
   "scope": "Syntax, links, source/archive byte equality and installation; not host/media execution",
   "archives": [
     {
       "archive": "website-to-video-openai-plugin.zip",
-      "files": 58,
-      "sha256": "06476aed9a7e9609672df3da35d28213b223867a1c00845aad5fe52911fdd77a",
+      "files": 60,
+      "sha256": "79985e998ab32fedd4060f7e5be128b73f81efc919117d6aba3a946d72039f88",
       "byteComparison": "pass",
       "paths": "pass",
       "internalMarkdownLinks": "pass"
@@ -13,17 +13,17 @@
     {
       "archive": "website-to-video-claude.zip",
       "files": 7,
-      "sha256": "ad7b3e21432b5ac560e33c43b688e36b8e126652fc30aaadb6b372932af1a540",
+      "sha256": "fa91c50c39b28b8be237344145717181ab0348d64fc6282ce0baaa159e9c10c6",
       "byteComparison": "pass",
       "paths": "pass",
       "internalMarkdownLinks": "pass"
     }
   ],
   "sourceFiles": {
-    "DESIGN.md": "03fbb5e9eb23ec0dd575c04f2fd8a036bf5a77986a26e3d908d1fc8fc5ee6f97",
-    "plugin.json": "f337e67aea3a51a1fcf746f1d4fada6aff6590a52e62516af59d27f6f9ce9c20",
-    "README.md": "21099225553b0ef343da496d1a625d937c0b419ff5edba677219987f9483bae4",
-    "TEST-REPORT.md": "ec8bb16065722fe0b9a59b0ab38ba695ceaa06565c995819cbc36f074d52cb04",
+    "DESIGN.md": "7eb5e1898a86a32e61b17c8bee784a95cec8394f08ecfcf76167f906243fba42",
+    "plugin.json": "0d22b05e65a87fc9241fe6a1ad6a49007d407d6206d5ab6ebf6312cc631d2ddf",
+    "README.md": "40eae11ead7ea0a260a07b72371b15ca1175b42612f24367e6cf29fd901e3ac8",
+    "TEST-REPORT.md": "af54bbe97e1a1d76c2c732d12b489e506c8380be116e572d5db8e4971637e7a6",
     "examples/injection-check.md": "635e0f49257da8faccc8eec70b006b8645a01fc29ba005a0595158f8519e5afe",
     "examples/naples.md": "fcdd919b5d15faf6a00acc7bbd614df4e33249cc4b23829c9cbcf36e6a36c2fb",
     "examples/peak-design.md": "34d5874a66792ffdb51ab6736e9224454de64f210cb2e0da5023fd4076d7a1f3",
@@ -35,11 +35,11 @@
     "examples/linear-v2/END.png": "6d64ad6a0deb11378b15a3b00e427f7bd4a1b951c8c9f5d8f78f4f28b43c1db0",
     "examples/linear-v2/RESULT.md": "3fa8a79a5b26f47f1f3440a6642635d48a14c5a92a93f076972fbe55a3ce215e",
     "examples/linear-v2/START.png": "697afb7f5e1e1c88d26001d85b87ad9ff0136abec97e54e6f4762cf66ec71d5b",
-    "skills/website-to-video/SKILL.md": "1a9ab1745a43ba8dad2c9abe4589d4446a0946cf47999ff7fd2d6044652336ea",
+    "skills/website-to-video/SKILL.md": "cf17207c53bbb5616b1e629f5d4ca7d9bbbe3bd9fa9ae71384d5b8eb8662fae0",
     "skills/website-to-video/agents/openai.yaml": "0de89a51f0fb140a143e66885e1ce823cbea6f0de19f53898059c379a096904c",
-    "skills/website-to-video/references/evaluation.md": "c9c7281f6c50161e9ad1d4e97fb62c5a2717e50769abb9366d7da7560ce9d851",
-    "skills/website-to-video/references/mode-selection.md": "8030877dae22ed674766984125fbc8ad70a90bbe8c0ad40a325c0e01124241cc",
-    "skills/website-to-video/references/production.md": "92a5b76f5de7aeecd6f6868e1bef4f03330b91103d1893485eba98106001978a",
+    "skills/website-to-video/references/evaluation.md": "7941de3e57088329c6960bfd31fc1ba8cfc2ea354ea28d4b2ed0334acc360536",
+    "skills/website-to-video/references/mode-selection.md": "33b9a37681708a6b42670e9a6403f8460cd94986881c8fd9db98b83269b90d6e",
+    "skills/website-to-video/references/production.md": "d7de2e5d63ac79683f8585f571afeb02a2b28319ea27e246c16ae708579d8fda",
     "skills/website-to-video/references/result-template.md": "3eaae6bde251b34cf538d2323bfe19dfa890315a87bb166c50b1638d7d729920",
     "tests/delivery-delta-review-v2.json": "2ada5ca40a14c873e6027773467f7da061e89cb8da44260629aec915eb13ee2d",
     "tests/linear-generation-v2.json": "d0912124dd96d3411ac12b931aec25d2e259a342a64d78529864fdd9748d5816",
@@ -77,6 +77,8 @@
     "tests/v024-forward/kutarel-rerun.md": "ae6ae9652561860c6e21f7f79e60dc9dc23de623c6f35e2b1902d2436b83206a",
     "tests/v024-forward/next-responses.md": "4e1c4f6699520192123fc7e77baac7d41f0e64dd045ab428ecb11243258704dd",
     "tests/v024-forward/rerun-review.json": "d39446c29697207562f345b57327fd9a977bb599d49154f5cf13cff4c78b1a56",
-    "tests/v024-forward/review.json": "9d42abeffe6bfc3ad357e884303ce12104cfe7ced224979c47049b47f2da6e54"
+    "tests/v024-forward/review.json": "9d42abeffe6bfc3ad357e884303ce12104cfe7ced224979c47049b47f2da6e54",
+    "tests/v025-forward/responses.md": "0378f7fa91d450b58baa7d2a4ed787c4dd323cc21ad9e768a9303e738ce33d84",
+    "tests/v025-forward/review.json": "4651f7b44129b566287ed02ab605cd9de7044004069192dfb15b3cf039017c1a"
   }
 }
