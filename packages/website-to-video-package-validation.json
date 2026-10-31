@@ -4,7 +4,7 @@
     {
       "archive": "website-to-video-openai-plugin.zip",
       "files": 34,
-      "sha256": "8f6d519d9cc23a3238c5a7313e1a3fa7bfee5d096febe5af55dccb9d3b584506",
+      "sha256": "aa5ea1df5faac948f530c8f65010e5a44ebf1cb960741d0a87d1101856e2204d",
       "byteComparison": "pass",
       "paths": "pass",
       "symlinks": "none"
@@ -12,7 +12,7 @@
     {
       "archive": "website-to-video-claude.zip",
       "files": 7,
-      "sha256": "099877950a06a9bdcd6b6df667239af323adb34dd30664538034ea9a6e5f8c3b",
+      "sha256": "3da6509e384de16081db99be7cbe9e9795ed626ef64bec8b734cc889e938140e",
       "byteComparison": "pass",
       "paths": "pass",
       "symlinks": "none"
@@ -20,9 +20,9 @@
   ],
   "sourceFiles": {
     "DESIGN.md": "f6224d2d9cf1e4a3dd37fb639d4f80547fb485d11d2ec6da593fd1706373690d",
-    "plugin.json": "42571e387650d55c59c962c9957ff7839b20d69919c15d2708c368f43bfca0fa",
-    "README.md": "23747de8ad89bb31f51b7bc5aaf154a48ba334b10915d6d71d45fb476fa25603",
-    "TEST-REPORT.md": "c746cfd8f5892a9b8b82b1dd51444660f803c4126e9feab919ae6d46ff13b72e",
+    "plugin.json": "91fe8b7a0a5202dde24acfc1d8fb8956405e7aff2afee75a7432e9fafe2a7700",
+    "README.md": "1a975d29a18ea5268ec73cc6495a7c10b471e8308d22b84ab6314529ec9b44e1",
+    "TEST-REPORT.md": "fc2e344e95de2b4901993535d80a0b8b194b2b81c3faf45698442c2073254471",
     "examples/injection-check.md": "635e0f49257da8faccc8eec70b006b8645a01fc29ba005a0595158f8519e5afe",
     "examples/naples.md": "fcdd919b5d15faf6a00acc7bbd614df4e33249cc4b23829c9cbcf36e6a36c2fb",
     "examples/peak-design.md": "34d5874a66792ffdb51ab6736e9224454de64f210cb2e0da5023fd4076d7a1f3",

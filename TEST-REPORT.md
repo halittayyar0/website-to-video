@@ -1,8 +1,10 @@
-# Website to Video, v0.2.0 test raporu
+# Website to Video, v0.2.1 test raporu
 
 31 Ekim 2026. Yerel Windows/Codex ortamında yapıldı. Belge desteği, dosya kurulumu, elle davranış testi ve başka istemcide gerçek çalıştırma ayrı değerlendirilir.
 
 ## Yeni sürümde kontrol edilenler
+
+Metadata yama sürümü 0.2.1: aşağıda sınanan skill davranışı aynı kalır; sunucudaki önceki yazar kimliği korunur. Paylaşılabilir paket yazar iletişim e-postası içermez. Metadata geri okuması dış teslim kanıtında ayrıca doğrulanır.
 
 | Koşu | Gerçek kapsam | Sonuç |
 | --- | --- | --- |

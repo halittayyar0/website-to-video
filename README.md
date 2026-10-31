@@ -1,6 +1,6 @@
 # Website to Video
 
-Sürüm 0.2.0: Codex mod seçimi, üretimden önce kaynak/START denetimi, çift başına sınırlı onarım ve hedef araca uygun tek video promptu. Güncel testler ve geçmiş örneklerin sınırları [TEST-REPORT.md](TEST-REPORT.md) içindedir.
+Sürüm 0.2.1: Codex mod seçimi, üretimden önce kaynak/START denetimi, çift başına sınırlı onarım ve hedef araca uygun tek video promptu. Güncel testler ve geçmiş örneklerin sınırları [TEST-REPORT.md](TEST-REPORT.md) içindedir.
 
 Pranam için: skill'i seçip yalnız bir URL gönderin. Codex, bu iş için daha önce seçim yapmadıysanız “Görselleri burada üreteyim mi, yoksa yalnız promptları mı hazırlayayım?” diye sorar ve yanıtı bekler. Seçiminize göre siteye özel iki uç kare veya iki İngilizce görsel promptu, ayrıca İngilizce video promptu ve kullanım ayarları hazırlanır. Video dosyası üretmek zorunlu değildir. Ek API anahtarı veya ücretli servis bağımlılığı yoktur; mevcut hostun erişimi ve kullanım limitleri geçerlidir.
 
