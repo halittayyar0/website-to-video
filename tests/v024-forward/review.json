@@ -1,0 +1,54 @@
+{
+  "test": "v024-forward-scene-behavior",
+  "scope": "Bounded fixture-based next responses/plans; no full production prompts requested",
+  "inputs": {
+    "skill": "outputs/website-to-video/skills/website-to-video/SKILL.md",
+    "references_read": ["references/production.md", "references/evaluation.md", "references/mode-selection.md", "references/result-template.md"],
+    "local_images_visually_inspected": ["outputs/kutarel-film-v2/START.png", "outputs/kutarel-film-v2/END.png"],
+    "live_site_facts": "unverified; all site/product descriptions are scenario premises",
+    "old_test_reports_read": false
+  },
+  "response_artifact": "next-responses.md",
+  "cases": [
+    {
+      "id": "kutarel",
+      "decision": "pending exact source for faithful meaningful cloth action; prior full-product-to-chest proposal rejected as motion solution",
+      "user_intent": "pass",
+      "action_feasibility": "pass: missing physical drape/action reference identified; no invented rear or manufacturing sequence",
+      "source_honesty": "pass",
+      "unsupported_properties": "pass",
+      "bare_url_intake": "pass: kutarel.com normalized to https://kutarel.com without replacement or repeat mode question",
+      "prior_pair_observation": "full garment followed by chest crop; no meaningful subject state progression apparent; stills cannot verify video motion"
+    },
+    {
+      "id": "pouch",
+      "decision": "source-constrained zipper opening toward verified open state",
+      "user_intent": "pass",
+      "action_feasibility": "pass at plan level, conditional on visible verified zipper route; no hidden mechanism invention",
+      "source_honesty": "pass: fixtures marked as premises, hand staged editorially",
+      "unsupported_properties": "pass",
+      "different_site_fit": "pass: compartment access tied to CTA and orderly studio language"
+    },
+    {
+      "id": "cafe",
+      "decision": "source-supplied pour into ceramic cup; rising level and clean end of stream",
+      "user_intent": "pass",
+      "action_feasibility": "pass at plan level; fluid rendering remains unverified",
+      "source_honesty": "pass",
+      "unsupported_properties": "pass: no added brewing method, steam, provenance or taste claims",
+      "different_site_fit": "pass: actual serving action and warm window light rather than product rotation/zipper template"
+    },
+    {
+      "id": "explicit_camera_only",
+      "decision": "honor exact 2 percent global zoom over five seconds; no fabric action",
+      "user_intent": "pass",
+      "action_feasibility": "pass at plan level",
+      "source_honesty": "pass",
+      "unsupported_properties": "pass",
+      "explicit_exception": "pass: ordinary action default does not override camera-only request"
+    }
+  ],
+  "overall": "pass for bounded response behavior",
+  "unverified": ["live sources", "new endpoint identity and crop", "generated intermediate video continuity", "actual browser playback", "full three-prompt handoff not exercised in this bounded test"],
+  "side_effects": {"media_calls": 0, "browsing_calls": 0, "publishing_calls": 0, "external_app_mutations": 0}
+}

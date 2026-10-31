@@ -1,6 +1,18 @@
-# Website to Video, v0.2.3 test raporu
+# Website to Video, v0.2.4 test raporu
 
 31 Ekim 2026. Yerel Windows/Codex ortamında yapıldı. Belge desteği, dosya kurulumu, elle davranış testi ve başka istemcide gerçek çalıştırma ayrı değerlendirilir.
+
+## v0.2.4: siteye ve ürüne özel gerçek sahne eylemi
+
+Kullanıcı, v0.2.3 KUTAREL tam ürün → detay çiftini de hareket ihtiyacına uygun bulmadı. Daha büyük yakınlaşma, nesnenin/sahnenin eylemsiz kalmasını çözmez. Önceki görsel kadraj farkı kabulü bu yeni hareket talebini geçtiği anlamına gelmez. [Gerçek başarısız örnek kaydı](tests/v024-baseline/static-zoom.json).
+
+Düzeltme: plan incelenen site/ürün kanıtından başlar; eylemin neden bu ürüne ve sayfaya uyduğu açıklanır. Hareket eden unsur, START/ara/END durumları ve zamanlama, kameranın destek rolünden ayrı yazılır. Normal hareket isteğinde kamerayı zihnen sabitleyince hâlâ sahne eylemi kalmalıdır. Her büyüklükte yalnız statik kırpma/zoom varsayılan çözüm olarak reddedilir. Sabit dönüş/kumaş/rastgele el-model şablonu uygulanmaz. Kimlik ve yapı sabit tutulurken gerekli poz/konum/uygun yumuşak hareketin değişmesine izin verilir; tüm silueti dondurmak eylemi iptal edemez. Eksik gerçek görünüm/özellik uydurulmaz. Açık camera-only, mikro hareket veya çevrim talebi korunur.
+
+İlk bağımsız [dört yanıt](tests/v024-baseline/first-next-responses.md), çanta için doğrulanmış fermuar açılışı, kafe için kaynakta görülen dökme eylemi ve açık camera-only istisnasını uygun planladı. Ancak KUTAREL'de yalnız statik kaynak bulunduğu için kullanıcıdan zorunlu hareket kaydı istedi. [Ana ajan değerlendirmesi](tests/v024-baseline/first-candidate-assessment.json) bu kısmı gereksiz engel olarak reddetti; bağımsız ilk incelemenin genel PASS etiketi son kabul sayılmadı. Statik kaynak, editoryal hareket tasarlamayı tek başına engellemez; gerçek özellik/demonstrasyon kanıtı ile açıklanmış görsel sahneleme ayrıldı. Kaynakta olmayan arka yüz veya kesin malzeme/performans iddiaları için kanıt şartı korunur.
+
+Güncel adayla [KUTAREL yeniden yanıtı](tests/v024-forward/kutarel-rerun.md) ve [inceleme/hash kaydı](tests/v024-forward/rerun-review.json) geçti: örnek marka öncüllerine bağlı sakin, önden masa üstü giysi düzenleme eylemi; ellerin manşetleri dışa kaydırıp çekildiği gerçek START/ara/END durumları. Bu plan sabit kamerada da eylem taşır, mevcut eski katalog START'ını zorlamaz; gerçek kumaş performansı iddiası ve kullanıcıdan zorunlu hareket kaydı yoktur. Beş değerlendirilen çekirdek/referans dosyasının hash'i yayın adayına eşleştirilir. İlk üç diğer dalın uygun planları ve hatalı ilk KUTAREL engeli tarihsel kayıt olarak korunur.
+
+Bu testler sağlanan fixture'lardan üretilmiş gerçek karar/metin yanıtlarıdır; canlı site araştırması, tam üç-prompt teslimi veya medya üretimi değildir. Eski gerçek KUTAREL iki görseli açılıp hareket ihtiyacına uymadığı belirlendi. Bu sürüm skill bakımıdır; yeni KUTAREL kareleri veya video üretilmedi. Yeni sahnenin temas, kimlik, kırpma ve ara hareket başarısı üretilmiş görüntü/video olmadan doğrulanamaz.
 
 ## v0.2.3: şemasız adres ve fark edilebilir uç kareler
 

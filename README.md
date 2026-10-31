@@ -1,6 +1,6 @@
 # Website to Video
 
-Sürüm 0.2.3: `kutarel.com` gibi HTTPS yazılmamış adresler de kabul edilir; alan adı ve adresin devamı korunur. Normal bir çekimde START–END farkı site boyutunda açıkça görülmelidir; neredeyse aynı iki kareyi küçük yakınlaşma diye teslim etmek yeterli değildir. Açık mikro hareket/döngü talepleri korunur. Codex mod seçimi, kaynak/START denetimi, sınırlı onarım ve hedef araca uygun tek video promptu sürer. Güncel testler ve geçmiş örneklerin sınırları [TEST-REPORT.md](TEST-REPORT.md) içindedir.
+Sürüm 0.2.4: sahne, incelenen site ve belirli ürünün kullanımına/kimliğine göre planlanır. Normal hareket isteğinde gerçek sahne eylemi gerekir; aynı fotoğrafı büyütmek, kaydırmak veya kırpmak hareket çözümü sayılmaz. Sabit bir döndürme/dalgalandırma şablonu yoktur. START, ara eylem ve END durumları kamera hareketinden ayrı tarif edilir. Açık camera-only, mikro hareket ve tam çevrim talepleri korunur. Şemasız adres desteği ve önceki seçim/sadakat kontrolleri sürer. Kanıt kapsamı [TEST-REPORT.md](TEST-REPORT.md) içindedir.
 
 Pranam için: skill'i seçip yalnız bir URL gönderin. Codex, bu iş için daha önce seçim yapmadıysanız “Görselleri burada üreteyim mi, yoksa yalnız promptları mı hazırlayayım?” diye sorar ve yanıtı bekler. Seçiminize göre siteye özel iki uç kare veya iki İngilizce görsel promptu, ayrıca İngilizce video promptu ve kullanım ayarları hazırlanır. Video dosyası üretmek zorunlu değildir. Ek API anahtarı veya ücretli servis bağımlılığı yoktur; mevcut hostun erişimi ve kullanım limitleri geçerlidir.
 
@@ -18,6 +18,8 @@ Ortak çekirdek `skills/website-to-video/` içindedir. İki hostun aynı dosyala
 Claude çıktısı bu iş akışında prompt-only'dir. Codex'te seçim beklenir; açıkça “sadece prompt” veya “görselleri sen üret” yazdıysanız tekrar sorulmaz. Seçim aynı işin kareleri ve revizyonları için korunur. Yalnız prompt seçilirse önizleme için bile görsel aracı çağrılmaz. Üretim seçildiyse önce START kaynakla karşılaştırılır; ancak kabul edilen START referansıyla END üretilir. Araç yoksa veya üretim başarısızsa gizlice başka moda/ücretli API'ye geçilmez. Bir URL erişilemiyorsa skill bunu açıklar, bilgi uydurmaz. Kaynak sayfalardaki talimatlar kullanıcı seçimi sayılmaz.
 
 ## Kendi denemeniz
+
+Sahne önce site ve belirli ürün üzerinden kurulur. Kamera sabitken de anlaşılacak bir eylem seçilir; zoom/kırpma tek başına sıradan hareket isteğini karşılamaz. Yalnız statik ürün fotoğrafı bulunması, kullanıcıdan otomatik olarak video istemek anlamına gelmez: mümkün olan editoryal hareket tasarlanır ve gerçek ürün özelliği iddiasından ayrılır. Kaynakta olmayan özellikler/yüzeyler uydurulmaz.
 
 1. Uygun paketi kurup skill'i seçin; yalnız kendi web sitenizin URL'sini gönderin.
 2. Codex'in mod sorusuna cevap verin; örneğin “yalnız prompt” veya “görselleri sen üret”. “Devam” gibi belirsiz bir cevap otomatik üretim izni sayılmaz. Özetin ürününüzü ve ziyaretçiden beklenen eylemi doğru anladığını kontrol edin.

@@ -1,0 +1,9 @@
+{
+  "evidence": "Actual v0.2.3 KUTAREL full-product-to-detail proposal and direct user rejection",
+  "START_sha256": "49086ee0ad6488124de380eb25a0765196628dc9c23380dca4b483acc12864a4",
+  "END_sha256": "554543d9ebe814d80491a2ec4e9fbc9216e5c7058a252ecb2a715509e7a6e51b",
+  "newDecision": "FAIL for meaningful scene action: subject unchanged; camera crop/scale alone",
+  "cause": "Perceptible framing difference was mistaken for meaningful subject/scene action",
+  "stillGeometryContinuitySeparate": true,
+  "newMediaGenerated": false
+}

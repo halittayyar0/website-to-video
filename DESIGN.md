@@ -1,5 +1,9 @@
 # Tasarım ve çalışma planı
 
+## v0.2.4: ürüne özel eylem, kamera farkından ayrı
+
+Kullanıcı v0.2.3'teki daha büyük KUTAREL zoomunu da reddetti: kadraj farkı ile sahne eylemi aynı şey değildir. Yeni hedef yalnız daha fazla zoom değildir. Sahne sitenin gerçek ürünü, kullanım amacı, marka dili ve ziyaretçi eylemine göre seçilir; sabit bir hareket reçetesi uygulanmaz. START/ara eylem/END planlanmadan statik katalog başlangıcı üretilmez. Kamera sabitlenince de sahne eylemi anlaşılmalıdır. Gerçek ürün özelliği ile önerilmiş editorial staging ayrılır; fark yaratmak için gizli yüzey, üretim yöntemi veya malzeme yeteneği uydurulmaz. Açık kamera hareketi/mikro hareket/döngü brief'i geçerlidir. Bu bakım turunda kullanıcı yeni medya istemedi; yalnız skill davranışı ve mevcut dağıtımları değiştirilir.
+
 ## v0.2.3: adres girişi ve okunur görsel ilerleme
 
 KUTAREL'in gerçek ilk çiftinde yaklaşık %3,9 yakınlaşma vardı; kullanıcı iki kareyi aynı buldu. Önceki %2–4 varsayılanı ve yalnız küçük değişim isteyen kabul ölçütü bu teslimi gereğinden zayıf bıraktı. Normal, döngüsüz bir çekimde site boyutunda açık görsel ilerleme aranır; bunun için keyfi bir evrensel yüzde şartı yoktur. Kullanıcının açık mikro hareket veya tam çevrim isteği korunur. Kaynakta görünmeyen ürün yüzeyleri ya da doku ayrıntıları fark yaratmak için uydurulamaz.

@@ -1,0 +1,45 @@
+{
+  "test": "v024-forward-kutarel-rerun",
+  "evaluated_at_utc": "2026-10-31T16:39:30.6645576Z",
+  "scope": "Case 1 only; fixture-based plan, no full prompts",
+  "result": "pass at response-plan level",
+  "decision": "Proceed with illustrative front-only tabletop garment arrangement; no mandatory user motion upload",
+  "checks": {
+    "user_intent": "pass",
+    "source_honesty": "pass: site facts are scenario premises, staging is illustrative",
+    "meaningful_action": "pass: cuff positions change through visible hand interaction independently of camera",
+    "feasibility": "pass at plan level: no turnover, stretch or hidden view",
+    "product_site_fit": "pass: quiet arrangement keeps small ivory chest signature visible and serves crewneck CTA",
+    "bare_url_mode": "pass: HTTPS normalized, prompt-only retained",
+    "rendered_output": "unverified: no new media",
+    "crop_identity_contact": "unverified until production"
+  },
+  "evaluated_files_sha256": [
+    {
+      "path": "SKILL.md",
+      "sha256": "1a9ab1745a43ba8dad2c9abe4589d4446a0946cf47999ff7fd2d6044652336ea"
+    },
+    {
+      "path": "references\\production.md",
+      "sha256": "92a5b76f5de7aeecd6f6868e1bef4f03330b91103d1893485eba98106001978a"
+    },
+    {
+      "path": "references\\evaluation.md",
+      "sha256": "c9c7281f6c50161e9ad1d4e97fb62c5a2717e50769abb9366d7da7560ce9d851"
+    },
+    {
+      "path": "references\\mode-selection.md",
+      "sha256": "8030877dae22ed674766984125fbc8ad70a90bbe8c0ad40a325c0e01124241cc"
+    },
+    {
+      "path": "references\\result-template.md",
+      "sha256": "3eaae6bde251b34cf538d2323bfe19dfa890315a87bb166c50b1638d7d729920"
+    }
+  ],
+  "historical_outputs_modified": false,
+  "side_effects": {
+    "browsing": 0,
+    "media_generation": 0,
+    "external_app_mutations": 0
+  }
+}
