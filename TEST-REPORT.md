@@ -1,6 +1,18 @@
-# Website to Video, v0.2.2 test raporu
+# Website to Video, v0.2.3 test raporu
 
 31 Ekim 2026. Yerel Windows/Codex ortamında yapıldı. Belge desteği, dosya kurulumu, elle davranış testi ve başka istemcide gerçek çalıştırma ayrı değerlendirilir.
+
+## v0.2.3: şemasız adres ve fark edilebilir uç kareler
+
+Kullanıcının gerçek KUTAREL ilk çiftine verdiği geri bildirim, yaklaşık %3,9 global yakınlaşmanın bu işte yetersiz olduğunu gösterdi. [Başarısız başlangıç kaydı](tests/v023-baseline/kutarel-motion-failure.json) eski çıktıyı başarı örneği saymaz. Kök neden, varsayılan %2–4 küçük yakınlaşma ile görsel ilerleme kontrolü eksikliğidir.
+
+Yeni çekirdek şemasız web adresini HTTPS ile tamamlar; alan adı/yol/sorgu/portu korur. Normal çekimde gerçek ekranda anlaşılır START → END ilerlemesi aranır; açık mikro hareket ve tam çevrim talepleri korunur. KUTAREL revizyonunda kabul edilmiş START aynı kaldı ve gerçek START referanslı yeni END üretildi. Bu revizyon yeni kaynak/mağaza durumu araştırması veya site değişikliği değildir.
+
+Bağımsız [altı gerçek metin yanıtı](tests/v023-forward/responses.md) ve [değerlendirme](tests/v023-forward/review.json): yeni şemasız URL'de tek mod sorusu; mevcut prompt-only seçiminde port/yol/sorgu/fragment korunması; açık HTTP ve mikro hareketin korunması; doğrulanmış tüm-yüz fixture'ında tam 360° çevrim; hatalı alan adında sessiz başka domaine geçmeme; web dışı şemayı açmama. Altı karar/metin senaryosu geçti. Bunlar canlı web veya altı gerçek host çalıştırması değildir.
+
+Gerçek yerel piksellerin bağımsız incelemesi, ilk yeni END'in belirgin farkını geçti fakat kaynağın göstermediği rib yaka dokusunu reddetti. Gerçek START bağlı son onarım sonrası [takip incelemesi](tests/v023-forward/repair-follow-up.json), bu dokunun kalktığını ve açık tam ürün → detay ilerlemesini doğruladı. Genel süreklilik, kaynak türevli dijital mockup konsepti düzeyinde geçti; birebir yaka/işaret geometrisi doğrulanmadı. İki kare 1672×941. Mobil `contain`, medya dışında HTML metni gerekir; merkezden portre kırpma onaylanmaz. Bu revizyonda iki yeni END çağrısı yapıldı; reddedilmiş END yeni referans yapılmadı, çift başına iki ek onarım sınırında duruldu.
+
+Eski üç sektörün gerçek kaynak ve medya testleri aşağıda tarihsel kanıt olarak kalır; güncel sürümde yeniden çalıştırılmış sayılmaz. Video dosyası ve ara kareler üretilmedi; Claude çalıştırması istenmedi ve yapılmadı. Yeni paket/dosya/yerel kurulum ve uzaktan kaynak geri okuması dış teslim kayıtlarında ayrı doğrulanır.
 
 ## v0.2.2: açık çekim talebi ve çözümlenmemiş gereksinimler
 

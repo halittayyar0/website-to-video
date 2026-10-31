@@ -1,5 +1,11 @@
 # Tasarım ve çalışma planı
 
+## v0.2.3: adres girişi ve okunur görsel ilerleme
+
+KUTAREL'in gerçek ilk çiftinde yaklaşık %3,9 yakınlaşma vardı; kullanıcı iki kareyi aynı buldu. Önceki %2–4 varsayılanı ve yalnız küçük değişim isteyen kabul ölçütü bu teslimi gereğinden zayıf bıraktı. Normal, döngüsüz bir çekimde site boyutunda açık görsel ilerleme aranır; bunun için keyfi bir evrensel yüzde şartı yoktur. Kullanıcının açık mikro hareket veya tam çevrim isteği korunur. Kaynakta görünmeyen ürün yüzeyleri ya da doku ayrıntıları fark yaratmak için uydurulamaz.
+
+URL girdisi şemasız alan adı/yol/sorguyu da kapsar; yalnız eksik web şeması eklenir, alan adı tahmin edilmez. Skill yerel çalışma yönergesidir; mevcut private plugin aynı yönergeyi dağıtan pakettir. Bu düzeltme yeni servis ya da site gerektirmez. Güncel davranış denemeleri eski üç sektör testlerinden ayrı raporlanır.
+
 Hedef: URL dışında zorunlu girdi olmadan, web'e gömülmeye uygun tek sahnenin başlangıç ve bitiş görselleri ve video promptu. Genel reklam üreticisi veya web sitesi dağıtım aracı değil.
 
 Seçim: ortak SKILL.md çekirdeği + Claude skill ZIP + OpenAI skills-only plugin. Kullanıcının makul kararlar alıp gereksiz soru sormama isteği doğrultusunda uygulama kararıdır. Ayrı sunucu/API daha fazla bağımlılık eklediği; yalnız Custom GPT yönergesi native skill kurulumunu karşılamadığı için seçilmedi.

@@ -1,0 +1,14 @@
+{
+  "source": "Actual v1 pair and direct user feedback, not a simulated test",
+  "START_sha256": "49086ee0ad6488124de380eb25a0765196628dc9c23380dca4b483acc12864a4",
+  "END_sha256": "89b892b745d9b3c9cd2d133290756a9b58108b25c5b9d748da585a6d154db852",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "observedScale": "approximately 1.039",
+  "oldAcceptance": "accepted as quiet movement",
+  "currentDecision": "FAIL: insufficient perceptible progression for this user and ordinary non-loop default",
+  "cause": "production reference preferred 2-4% push, and rubric required a small change without an observable visual-progression gate",
+  "notAVideoTest": true
+}

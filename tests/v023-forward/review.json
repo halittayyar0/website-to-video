@@ -1,0 +1,104 @@
+{
+  "schema": "website-to-video-independent-bounded-review/v1",
+  "candidate": "outputs/website-to-video/skills/website-to-video",
+  "date": "2026-10-31",
+  "reviewer": "w2v023_check",
+  "read": ["SKILL.md", "references/mode-selection.md", "references/production.md", "references/result-template.md", "references/evaluation.md"],
+  "scope": {
+    "simulation_responses": "responses.md",
+    "live_browsing": false,
+    "media_generation": false,
+    "video_render_or_playback": false,
+    "publish_or_app_mutation": false,
+    "older_reports_or_intended_fixes_read": false,
+    "source_of_scenario_facts": "Parent-supplied fixtures only; not independently verified website facts",
+    "source_of_image_findings": "Actual requested local files inspected with view_image; dimensions independently read with PIL"
+  },
+  "cases": [
+    {"id": 1, "input": "$website-to-video kutarel.com", "normalized_address": "https://kutarel.com", "assessment": "pass", "next": "Ask exactly one output-mode question and wait; optional read-only source research", "production_status": "mode_pending"},
+    {"id": 2, "input": "example.com:8443/products/coat?color=black#details", "normalized_address": "https://example.com:8443/products/coat?color=black#details", "assessment": "pass", "next": "Honor existing prompts-only; deliver complete front-source-faithful prompts without unseen-surface reveal", "production_status": "prompts_only_simulation", "limitations": "Fixture described as a front coat image only; not an opened local file or live page; query parameter does not prove its visible color"},
+    {"id": 3, "input": "http://example.com/quiet?x=1 ; prompts only, 5-second almost still ambient cloth shot, no big zoom", "normalized_address": "http://example.com/quiet?x=1", "assessment": "pass", "next": "Read-only inspect exact HTTP URL and source asset; retain nearly still five-second cloth brief; no mode question or forced zoom", "production_status": "source_pending_in_bounded_test", "limitations": "No cloth fixture supplied and browsing prohibited; full grounded prompts cannot be completed honestly"},
+    {"id": 4, "input": "https://example.com ; prompts only, 5 seconds, front-facing object rotates exactly 360 degrees back to front", "normalized_address": "https://example.com", "assessment": "pass", "next": "Use all-sides fixture premise; retain full turn at 72 degrees/second and front END; write exact cycle prompts", "production_status": "prompts_only_simulation", "limitations": "All-sides availability is a test premise; identical endpoint poses do not prove actual intermediate rotation or loop join"},
+    {"id": 5, "input": "kutaler.shop", "normalized_address": "https://kutaler.shop", "assessment": "pass", "next": "Report supplied DNS/source failure and request accessible URL or public source; never substitute guessed domain", "production_status": "source_blocked", "limitations": "DNS failure supplied by test, no live DNS execution"},
+    {"id": 6, "input": "javascript:alert(1)", "normalized_address": null, "assessment": "pass", "next": "Reject non-web scheme without opening it; request ordinary website address", "production_status": "invalid_input"}
+  ],
+  "image_review": {
+    "files": [
+      {"role": "START", "path": "outputs/kutarel-film-v2/START.png", "width": 1672, "height": 941, "aspect": 1.7768331562167907},
+      {"role": "initial_rejected_END", "path": "outputs/kutarel-film-v2/END-attempt-1-rejected.png", "original_path_at_inspection": "outputs/kutarel-film-v2/END.png", "sha256": "3e37611f8f66f7bd9fb6f3d8c51e4f6dd45c85eea8ab9279e6cb5bd058a429bf", "width": 1672, "height": 941, "aspect": 1.7768331562167907},
+      {"role": "source_identity", "path": "outputs/kutarel-film-v1/reference-crewneck.jpg", "width": 590, "height": 900, "aspect": 0.6555555555555556}
+    ],
+    "overall": "rejected_pending_for_strict_literal_product_delivery",
+    "provenance": "All END observations in this initial review refer to archived END-attempt-1-rejected.png, originally inspected under END.png before repair; they do not describe the current repaired END.png. See repair-follow-up.json for the repaired asset judgment.",
+    "checks": [
+      {
+        "check": "real_endpoint_distinction",
+        "status": "pass",
+        "finding": "START shows the entire front garment offset to the right with wide left negative space; END is a substantially closer upper-chest/collar view, cropping sleeves and lower body. The difference is plainly visible at normal display size, not a barely changed global zoom."
+      },
+      {
+        "check": "single_subject_and_broad_identity",
+        "status": "pass",
+        "finding": "Both show one dark front-facing crewneck, a pale three-part chest mark on image-right, long sleeves and similar off-white background. These broad properties match the local crewneck source. This is broad identity only, not proof of exact product fidelity."
+      },
+      {
+        "check": "collar_material_and_fine_construction_continuity",
+        "status": "fail",
+        "finding": "END presents conspicuous fine collar ribbing and a thicker, more dimensional neckband. START's neckband reads mostly smooth at the displayed native resolution, with a different-looking edge/shading treatment; the low-resolution source also does not establish those fine ribs. The END therefore adds/reinterprets material construction detail instead of demonstrating a faithful scaled crop. Do not accept a uniform-transform claim based on the prompt."
+      },
+      {
+        "check": "mark_exact_proportions_and_edges",
+        "status": "unverified",
+        "finding": "The same broad three-part pale motif persists. END makes the two side pieces appear heavier and exposes edge/corner shapes that cannot be confidently matched to the much smaller source mark or START at normal size. No obvious extra fourth element is present, but exact symbol proportions and pixel preservation are not proven by this review; broad similarity is insufficient for literal logo acceptance."
+      },
+      {
+        "check": "silhouette_seams_and_construction_vs_source",
+        "status": "unverified",
+        "finding": "Source and START share the broad crewneck silhouette and visible cuff/hem bands. START restages/re-renders the source garment, including smooth tonal folds; the source's small size limits exact seam/material comparison. END excludes cuffs/hem, so their continuity cannot be judged there. Overall color/silhouette similarity does not establish all construction details."
+      },
+      {
+        "check": "broad_light_and_background_continuity",
+        "status": "pass",
+        "finding": "Both endpoints retain a quiet pale background and soft illumination with no obvious day/night or color-temperature change. At this level a continuous front shot is plausible. Exact light-field invariance is unverified, and collar texture/shading changes are covered by the material failure."
+      },
+      {
+        "check": "source_fidelity_at_end_detail_scale",
+        "status": "fail",
+        "finding": "A 590x900 front source supports the visible product and mark at limited detail, but cannot verify the fine ribbed construction now prominent in the enlarged generated collar. Generated detail should not be presented as observed product fact. Faithful rendering remains pending rather than approved because the same broad garment appears."
+      },
+      {
+        "check": "feasible_motion",
+        "status": "pass",
+        "finding": "A fixed-front crop/scale/translation from the full garment to already visible upper front is physically and editorially feasible without revealing an invented rear or requiring an orbit. The actual texture change means an identity-preserving interpolation is not yet established; use a faithful common source/accepted anchor for repair. No actual video was inspected."
+      },
+      {
+        "check": "actual_dimensions",
+        "status": "pass",
+        "finding": "Both endpoints are 1672x941, aspect 1.776833, very close to but not exactly 16:9. They are not 1920x1080 outputs. Export by a small crop/pad if exact 16:9 is required; do not stretch. Source is 590x900 portrait."
+      },
+      {
+        "check": "desktop_layout_and_copy_space",
+        "status": "unverified",
+        "finding": "START has substantial pale left negative space. END brings the garment into much of the lower-left frame, leaving a left wedge rather than the same broad rectangle. Shared copy space is therefore much smaller than START alone suggests. Pale background also needs suitable dark live HTML text; no consuming page, actual overlay or contrast test was supplied. Keep copy outside the media unless the shared region is measured in that layout."
+      },
+      {
+        "check": "universal_centered_portrait_crop",
+        "status": "fail",
+        "finding": "A full-height 9:16 crop at 941px high retains about 529px of the 1672px width, centered at x approximately 571 to 1101. START garment spans roughly x820 to1450 and its chest mark is farther right than the crop's right edge, so this crop clips the garment and misses its key mark. END's mark is also beyond that right edge. A right-biased crop may retain a chest detail but cannot retain the whole START garment at that portrait width. Provide a separate portrait export or an explicit still/contain layout; do not promise a lossless universal crop."
+      },
+      {
+        "check": "video_intermediate_motion_loop_or_device_execution",
+        "status": "unverified",
+        "finding": "Only still endpoints were inspected. No rendered intermediates, loop join, scroll playback, seeking, phone device or mobile performance evidence exists in this review. Still distinction and plausible motion are not video passes."
+      },
+      {
+        "check": "actual_START_reference_mechanism_used_for_END",
+        "status": "unverified",
+        "finding": "The bounded task inspected raster outputs, not generation tool history. Visual resemblance alone cannot prove which image reference was attached."
+      }
+    ],
+    "repair_recommendation": "If one repair is available, preserve the exact accepted START collar and mark rather than rendering new high-frequency knit detail; use the actual accepted START as primary reference. Inspect the repaired END against START and source again. A crop of the same faithful anchor is safer than another material reinterpretation. This recommendation is not a claim that START itself has passed strict source fidelity or that a repair will succeed.",
+    "delivery_limit": "The current pair can illustrate composition/progression, but strict literal product acceptance is withheld for material-detail fidelity. Mobile layout requires explicit treatment regardless of a material repair."
+  },
+  "release_implication": "Six bounded response simulations and three local raster inspections are not the skill's required real URL/host/media execution release gates. No overall release pass is claimed."
+}
