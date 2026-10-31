@@ -1,0 +1,63 @@
+{
+  "run": "naples-prompts-v2",
+  "date": "2026-10-31",
+  "evidence_type": "Fresh current-skill read-only source research and actual prompt-only delivery, with a harness-supplied mode-choice exchange. Not reused from previous example answers or reports.",
+  "job_input": "https://naplesfloridarentals.com",
+  "creative_brief_supplied": false,
+  "mode_exchange": {
+    "initial_state": "URL only; no project mode in the job input",
+    "codex_question_recorded": "Görselleri burada üreteyim mi, yoksa yalnızca kopyalayabileceğiniz görsel ve video promptlarını mı hazırlayayım?",
+    "options": ["Generate images", "Prompts only"],
+    "test_supplied_explicit_answer": "Yalnızca promptlar",
+    "answer_source": "Parent test instruction, not a newly obtained interactive end-user/UI response",
+    "mode": "prompts-only",
+    "generation_calls_while_choice_pending": 0,
+    "questionnaire_or_creative_brief_required": false
+  },
+  "current_skill_read": "outputs/website-to-video/skills/website-to-video/SKILL.md",
+  "references_read": ["mode-selection.md", "production.md", "result-template.md", "evaluation.md"],
+  "tools_used": [
+    {"tool": "exec_command", "purpose": "Read actual current skill/references; download three publicly linked official source images; inspect source dimensions with System.Drawing; verify local final deliverable and JSON."},
+    {"tool": "web__run", "operations": ["open", "click"], "purpose": "Actual homepage research, follow named listing and actual official image links."},
+    {"tool": "view_image", "purpose": "Actually visually inspect homepage pool image, listing collage and listing waterfall photograph."},
+    {"tool": "apply_patch", "purpose": "Save actual full deliverable and this scope record locally."},
+    {"tool": "collaboration.send_message", "purpose": "Record mode question/test answer and source-grounding progress to parent agent."}
+  ],
+  "source_urls": [
+    "https://naplesfloridarentals.com/",
+    "https://naplesfloridarentals.com/naples-4br-kayak-access-heated-waterfall-pool-bbq-huge-yard-orp5b7639bx",
+    "https://uc.orez.io/f/fcbe0311da214edd9cc267479d55d1b4",
+    "https://uc.orez.io/i/ae186b098a194572bd20827617ab0446-Large",
+    "https://uc.orez.io/i/3abecab8a61345c9921ff31080b98b80-Large"
+  ],
+  "visual_sources_inspected": [
+    {"path": "naples-prompts-v2-source/home-gallery-27.jpg", "role": "homepage context only", "observation": "Pool, white fence, white loungers and tiki bar; not mapped to selected listing and excluded from literal concept."},
+    {"path": "naples-prompts-v2-source/listing-yard-pool.jpg", "role": "listing context only", "observation": "First named-listing image is a collage with multiple scenes and text; excluded as single-shot identity source."},
+    {"path": "naples-prompts-v2-source/listing-waterfall.jpg", "role": "primary literal identity reference", "observation": "Stepped stone waterfall into turquoise pool, planted edges and turquoise planters, dark screened enclosure, wood fence and trees.", "width": 1200, "height": 800, "planned_16_9_center_crop": {"width": 1200, "height": 675, "top_margin": 62.5, "bottom_margin": 62.5}}
+  ],
+  "selected_listing_mapping": "Homepage actual listing link led to named property page, whose own gallery link titled Tranquil Waterfall led to the exact primary photograph. No homepage-image/property identity was guessed.",
+  "concept": "Faithful waterfall-detail insert on the named listing; locked camera and only small natural water-flow/ripple changes.",
+  "target_video_tool": null,
+  "video_prompt_support": "Tool-neutral START/END prompt conditional on verified dual-endpoint support. Unknown target does not establish one-input capability; no fictional provider flags.",
+  "prompt_blocks": {"start": 1, "end": 1, "video": 1},
+  "generated_images": 0,
+  "generated_videos": 0,
+  "generation_calls": 0,
+  "paid_service_calls": 0,
+  "external_mutations": 0,
+  "cua_or_browser_ui_calls": 0,
+  "existing_example_answers_or_reports_read": false,
+  "memory_files_read": false,
+  "source_edits": 0,
+  "limitations": [
+    "Mode question was recorded and resolved using the explicit answer supplied by the test instruction; this is not evidence of interactive user UI handling.",
+    "No full-page browser render, responsive inspection or actual site's typography/color-system validation.",
+    "Source-photo/listing mapping and actual source dimensions were checked, but no generated START or END exists.",
+    "Real generated property fidelity, crop, continuity and START quality gate remain unverified.",
+    "No video render, intermediate-frame review, actual endpoint enforcement, playback or platform execution test.",
+    "No booking availability, rate, price, checkout, reservation or payment flow was exercised; no commercial claims were added to media.",
+    "Wide source scene does not support a faithful full-scene 9:16 crop; full 16:9 contain/still is specified for mobile.",
+    "Three downloaded JPG files are official inspection sources, not generated endpoint assets."
+  ],
+  "deliverable": "naples-prompts-v2.md"
+}

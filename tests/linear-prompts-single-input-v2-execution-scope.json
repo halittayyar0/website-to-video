@@ -1,0 +1,150 @@
+{
+  "run": "linear-prompts-single-input-v2",
+  "date": "2026-10-31",
+  "mode": "prompts-only",
+  "user_input": "https://linear.app — yalnız promptları hazırla. Kullanacağım video aracı yalnızca tek başlangıç görseli kabul ediyor; END görseli için alanı yok.",
+  "skill_read": "outputs/website-to-video/skills/website-to-video/SKILL.md",
+  "references_read": [
+    "production.md",
+    "result-template.md",
+    "evaluation.md",
+    "mode-selection.md"
+  ],
+  "tools_used": [
+    {
+      "tool": "exec_command",
+      "purpose": "Read current skill and references; download officially linked source images for inspection; validate local files and scope JSON."
+    },
+    {
+      "tool": "web__run",
+      "operations": [
+        "open",
+        "click"
+      ],
+      "purpose": "Actual homepage research and following two relevant product pages plus image links."
+    },
+    {
+      "tool": "view_image",
+      "purpose": "Visually inspect three official source assets."
+    },
+    {
+      "tool": "apply_patch",
+      "purpose": "Write the user deliverable and actual execution scope only."
+    },
+    {
+      "tool": "collaboration.send_message",
+      "purpose": "Send concise run progress to parent agent."
+    }
+  ],
+  "page_urls_inspected": [
+    "https://linear.app/",
+    "https://linear.app/plan",
+    "https://linear.app/build"
+  ],
+  "source_images_visually_inspected": [
+    {
+      "url": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/6600ca96-e49b-4fd9-c03a-7979faddad00/f=auto,fit=scale-down,metadata=none,width=2560",
+      "local": "linear-prompts-single-input-v2-source/home-asset-09.png",
+      "role": "homepage decorative source inspection only",
+      "observation": "Very dark shapes with transparency; viewer green was not treated as brand color."
+    },
+    {
+      "url": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c7fa8f5f-d439-4329-6a65-de549b51e300/f=auto,fit=scale-down,metadata=none,width=2560",
+      "local": "linear-prompts-single-input-v2-source/home-asset-10.png",
+      "role": "homepage decorative palette reference",
+      "observation": "Dark background with soft white-gray light near lower center."
+    },
+    {
+      "url": "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/028734bb-2e5c-463d-c4ef-702eef293500/f=auto,fit=scale-down,metadata=none",
+      "local": "linear-prompts-single-input-v2-source/plan-projects.png",
+      "role": "palette and visual-density reference, not literal UI reproduction",
+      "observation": "Actual UI Refresh project example with dark background, gray/light text and small purple/orange accents."
+    }
+  ],
+  "download_failure_and_recovery": "Initial percent-encoded CDN path spelling returned malformed URL in Invoke-WebRequest, and first view_image consequently found no file. A normal request to the same percent-decoded URL succeeded; no access-control bypass.",
+  "target_video_tool": {
+    "name": null,
+    "known_constraint_from_user": "Only one starting image input; no END field",
+    "provider_flags_invented": false
+  },
+  "deliverable_prompt_blocks": {
+    "start": 1,
+    "end": 1,
+    "dual_endpoint_reference_video": 0,
+    "single_start_actual_tool_video": 1
+  },
+  "single_image_adaptation": "Final current delivery contains exactly one complete standalone START-only video prompt with full scene, timing, invariant geometry and textual desired final state. No supplied-END dependency, dual-input block, or forced endpoint claim.",
+  "concept": "Clearly labeled nonliteral editorial planning motif, not fabricated software UI or metrics.",
+  "generated_images": 0,
+  "generated_videos": 0,
+  "generation_calls": 0,
+  "paid_service_calls": 0,
+  "external_mutations": 0,
+  "cua_or_browser_ui_calls": 0,
+  "existing_example_answers_or_reports_read": false,
+  "source_edits": 0,
+  "limitations": [
+    "No full-page visual rendering, responsive inspection, current webpage typography or exact placement validation.",
+    "Three actual source assets were visually inspected, but homepage decorative assets alone do not establish full composition.",
+    "No generated START or END exists; real image consistency, START acceptance gate, crop and contrast remain unverified.",
+    "No video was rendered or tested; intermediate frames, final-state accuracy, mobile performance and provider execution remain unverified.",
+    "The user's known one-image constraint is honored; exact final-frame enforcement is unavailable and not claimed.",
+    "Downloaded images are official source references only, not newly generated endpoint images."
+  ],
+  "deliverable": "linear-prompts-single-input-v2.md",
+  "execution_chronology": [
+    {
+      "stage": 1,
+      "kind": "initial actual research and delivery",
+      "date": "2026-10-31",
+      "research": "Actual homepage, two relevant linked pages and three visually inspected official assets",
+      "prompt_blocks": 4,
+      "image_blocks": 2,
+      "video_blocks": 2,
+      "issue": "Earlier result template requested an unusable dual-input reference plus a compatible START-only adaptation",
+      "snapshot_deliverable": "linear-prompts-single-input-v2-initial.md",
+      "snapshot_scope": "linear-prompts-single-input-v2-initial-execution-scope.json"
+    },
+    {
+      "stage": 2,
+      "kind": "current-skill delivery-stage correction and rerun",
+      "date": "2026-10-31",
+      "current_instruction_files_reread": [
+        "outputs/website-to-video/skills/website-to-video/SKILL.md",
+        "outputs/website-to-video/skills/website-to-video/references/result-template.md"
+      ],
+      "changes": "Removed unusable dual-input video prompt; kept complete standalone START-only prompt; updated user explanation, status and rubric",
+      "new_research_calls": 0,
+      "new_visual_inspection_calls": 0,
+      "new_generation_calls": 0,
+      "prompt_blocks": 3,
+      "image_blocks": 2,
+      "video_blocks": 1,
+      "verification": "Exactly three English blocks, two endpoint sections, sole video block begins with START as the sole image input; no supplied END dependency",
+      "tools_used": [
+        "exec_command"
+      ],
+      "source_edits": 0,
+      "external_mutations": 0
+    },
+    {
+      "stage": 3,
+      "kind": "delivery-only uniform-scale ambiguity correction",
+      "date": "2026-10-31",
+      "changes": "END and START-only video now preserve proportions and relative geometry while every apparent image-space size, line thickness, circle diameter and spacing scales with the complete scene by 1.02; forbid only independent/nonuniform deformation. Replaced imprecise rigid-scaling wording with uniform scaling.",
+      "previous_delivery_snapshot": "linear-prompts-single-input-v2-before-scale-correction.md",
+      "new_research_calls": 0,
+      "new_generation_calls": 0,
+      "tools_used": [
+        "exec_command"
+      ],
+      "source_edits": 0,
+      "external_mutations": 0,
+      "prompt_blocks": 3,
+      "image_blocks": 2,
+      "video_blocks": 1,
+      "verification": "Three prompt blocks retained; sole video START-only; intended apparent thickness change explicitly allowed."
+    }
+  ],
+  "evidence_type": "Correction/re-execution of delivery stage using the same actual grounded research; not a freshly researched independent input."
+}

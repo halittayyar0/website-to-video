@@ -1,6 +1,6 @@
 # Gayrimenkul / tatil kiralama — URL-only prompt yolu
 
-Tek iş girdisi: `https://naplesfloridarentals.com/`. Bu denemede prompt-only dalı elle seçildi; gerçek Claude oturumunda çalıştırma yapılmadı. Görsel üretilmedi.
+Tek iş girdisi: `https://naplesfloridarentals.com/`. Bu geçmiş denemede prompt-only dalı elle seçildi; gerçek Claude oturumunda çalıştırma yapılmadı. Görsel üretilmedi. v0.2.0'da Codex'teki yeni URL-only iş önce mod sorusunu alır; açık prompt-only seçimi varsa bu çıktı hazırlanır ve tekrar soru sorulmaz.
 
 Site, Naples'ta ev kiralamak isteyen ziyaretçiyi evleri incelemeye ve doğrudan rezervasyon akışına götürüyor. Tek yön: koleksiyon girişinde mevcut havuz/avlu fotoğrafından sakin, sessiz bir beş saniyelik film. Bu bir belirli ilan tanıtımı değildir: ana sayfa fotoğrafının hangi ilana ait olduğu doğrulanmadı. Siteye yeni mimari veya tesis eklenmiyor. Üstteki gökyüzü desktop HTML başlığı için düşünülebilir; mobilde metin medyanın dışında ve görüntü contain olmalı.
 
@@ -24,4 +24,12 @@ Use the generated START image as the primary image reference and attach it to th
 Create one five-second silent embedded website film using the supplied START image as the first-frame reference and the supplied END image as the final-frame reference. The scene is the exact photographed Naples Florida Rentals pool courtyard: turquoise pool, pale deck, white boundary fence, palms, white loungers with blue towels, left covered deck and existing tiki-bar structure in fixed daylight. It introduces the rental collection; it must not imply an unverified named property's features. Hold the opening composition for 0–0.5 seconds. From 0.5–4.5 seconds animate only gentle surface ripples toward the END pattern, with any existing floats bobbing minimally in place. Settle gently from 4.5–5 seconds. Lock the camera, lens, exposure, horizon, architecture, furniture, counts, textures and shadow direction. No pan, orbit, zoom, time-of-day change, cuts, photograph dissolve, morphing, vanishing objects, geometry drift, flicker, added rooms or invented amenities. No soundtrack or generated typography. End at the supplied END composition. This is a once-through or scroll-controlled shot; distinct ripple endpoints are not a promised seamless loop. Aspect recommendation is 16:9, with mobile contain and live HTML copy outside the image.
 ```
 
-İki kare kabul etmeyen bir araçta START'ı tek görsel girdisi yapın; yukarıdaki hareket tarifini kullanın. END yalnız kılavuz olur, zorunlu bitiş eşleşmesi garanti edilmez. Araç belirtilmediği için sağlayıcı parametresi uydurulmadı. Öneri: 5 sn, sessiz, 24–30 fps kaynak, hafif poster; kaydırma için ileri/geri gerçek görüntü testi, azaltılmış harekette sabit fotoğraf. Video üretilmedi veya test edilmedi.
+İki kare kabul etmeyen bir araçta aşağıdaki tek-girdili promptu kullanın; zorunlu bitiş eşleşmesi garanti edilmez.
+
+### Tek görsel girdisi için video promptu
+
+```text
+Use only the attached START image to create one five-second silent introduction film for the Naples Florida Rentals collection. Preserve the exact photographed courtyard: turquoise pool, pale deck, white fence, palms, existing loungers and blue towels, covered deck and tiki-bar structure. Do not associate this unverified photo-to-listing mapping with a named property's amenities. Lock camera, crop, horizon, architecture, furniture counts, materials, daylight and shadows. Hold0–0.5s. Animate only gentle surface ripples from0.5–4.5s, with existing floats bobbing minimally in place. Settle4.5–5s on a slightly changed calm ripple pattern. No second input image is supplied or required; this desired last state is a description, not a guaranteed exact endpoint. No morphing, disappearing objects, geometry drift, new amenities, text, people, cuts, flicker, pan, zoom, orbit or sound. Recommend16:9 with mobile contain and live copy outside the image. Play once or map reversibly to scroll, without promising a seamless loop between different ripple patterns.
+```
+
+Araç belirtilmediği için sağlayıcı parametresi uydurulmadı. Öneri: 5 sn, sessiz, 24–30 fps kaynak, hafif poster; kaydırma için ileri/geri gerçek görüntü testi, azaltılmış harekette sabit fotoğraf. Video üretilmedi veya test edilmedi.

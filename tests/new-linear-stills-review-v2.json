@@ -1,0 +1,97 @@
+{
+  "review_type": "independent_actual_still_pair_visual_review",
+  "date": "2026-10-31",
+  "scope": {
+    "instruction_files_read": ["outputs/website-to-video/skills/website-to-video/SKILL.md", "outputs/website-to-video/skills/website-to-video/references/production.md", "outputs/website-to-video/skills/website-to-video/references/evaluation.md"],
+    "plan_read": "work/website-to-video/generation-linear-v2/plan.json",
+    "actual_images_viewed_with_view_image": ["work/website-to-video/generation-linear-v2/source-home-glow.png", "work/website-to-video/generation-linear-v2/source-plan-01.png", "work/website-to-video/generation-linear-v2/START.png", "work/website-to-video/generation-linear-v2/END-attempt-3.png", "work/website-to-video/generation-linear-v2/END-attempt-2.png"],
+    "prior_generated_example_or_test_conclusions_used": false,
+    "new_image_or_video_generation": false,
+    "source_or_external_mutation": false,
+    "report_write_only": true
+  },
+  "decision": {
+    "preferred_reviewed_pair": ["START.png", "END-attempt-2.png"],
+    "status": "usable_still_pair_for_same_concept_with_truthful_revised_motion; actual_video_unverified",
+    "must_remain_rejected_solely_for_agent_chosen_2_percent_mismatch": false,
+    "summary": "The inspected START and END-attempt-2 form a coherent nonliteral editorial scene with three graphite rails and one violet sphere. They can serve the same quiet planning-section concept if the handoff describes a small roughly 4% closer framing instead of claiming the original exact 2% push. No gross count, identity, viewpoint, material or light failure is visible that requires rejecting this abstract still pair. This is a visual endpoint assessment, not proof of a mathematically exact uniform transform or a successful video.",
+    "user_numeric_requirement": "The original user supplied the Linear URL and selected generation; the 2% motion amount was an agent design choice, not a numeric user constraint.",
+    "acceptance_boundary": "Acceptance is for these endpoints as a restrained abstract website illustration under an updated honest motion plan. It does not mean the original 2% specification was met, erase earlier strict-spec rejection decisions, validate an attached-START tool history, or approve an unrendered video."
+  },
+  "observed_dimensions": {
+    "START.png": [1672, 941],
+    "END-attempt-2.png": [1672, 941],
+    "END-attempt-3.png": [1672, 941],
+    "requested": [1792, 1008],
+    "actual_ratio": "approximately 16:9; 1672/941 is about 1.7768",
+    "treatment": "Use actual dimensions in delivery and preserve aspect. Do not claim requested resolution was achieved or stretch to an exact ratio."
+  },
+  "visual_checks": [
+    {
+      "check": "Source-style and website-purpose fit",
+      "status": "pass_at_concept_level",
+      "evidence": "The directly viewed home source has a near-black field and broad soft white elliptical glow. The planning source has dark surfaces, restrained gray/white information and small violet/color accents. The generated pair carries those dark neutrals, restrained edge lighting and one violet accent without copying text, avatars or UI. A small supporting illustration beside a planning explanation is plausible; it should remain labeled nonliteral and should not replace the site's real software demonstration.",
+      "limit": "The full live page, responsive hierarchy, CTA prominence and final integration were not inspected in this review. The sculptural rails themselves are an editorial choice, not a verified Linear product object or capability."
+    },
+    {
+      "check": "Count and identity",
+      "status": "pass_visible",
+      "evidence": "START, END2 and END3 each visibly contain exactly three long shallow graphite bars and one solid pale-violet sphere resting near the midpoint of the middle rail. No added UI, letters, numbers, logos, extra sphere, connector or new semantic feature appears."
+    },
+    {
+      "check": "Geometry and viewpoint",
+      "status": "pass_at_visible_structure_level; exact_uniformity_unverified",
+      "evidence": "The three evenly spaced lanes, top planes, dark front sidewalls, left end faces, right end positions and overall perspective remain recognizable and coherent. The sphere remains on the middle rail. END2 has slightly closer framing; no obvious orbit, rail reversal, new hidden face or gross independent deformation is visible.",
+      "limit": "This is not a pixel-identity or exact uniform-scale pass. Tiny generative differences and the sphere's exact relative apparent size cannot be certified from ordinary endpoint viewing. A fitted global scale alone would not establish local geometry fidelity."
+    },
+    {
+      "check": "Materials and light",
+      "status": "pass_visible; pixel_identical_microtexture_not_claimed",
+      "evidence": "Satin graphite rail tops, dark sidewalls, restrained bright machined edges, matte near-black plane and ceramic-looking violet sphere remain consistent. The broad upper-left white illumination, left-biased ground glow and soft shadows retain the same direction and character. No dramatic color transition or new specular light source is visible."
+    },
+    {
+      "check": "Feasible motion between endpoints",
+      "status": "pass_for_small_revised_push_concept; original_exact_2_percent_not_passed",
+      "evidence": "A short gentle closer-framing move can connect this stable sculptural scene without moving the sphere along a rail, changing the object count or introducing a new viewpoint. The actual END is visibly a somewhat larger move than the original 2% design. A roughly 4% image-plane push is an appropriate qualitative handoff description, without claiming exact numeric enforcement or pixel-perfect uniformity.",
+      "limit": "No intermediate video frames were supplied or generated; a generator could still introduce flicker, morphing, local rescaling or an unwanted orbit and would require actual render inspection."
+    },
+    {
+      "check": "Copy space",
+      "status": "pass_for_observed_quiet_regions; implementation_contrast_unverified",
+      "evidence": "The upper roughly 30% is very dark and visually empty. The rails extend much farther left and right than the requested x42-78% occupancy; the leftmost approximately 25% remains object-free, but a soft ground glow brightens its lower portion. A conservative optional HTML copy area is x5-24%, y15-40%, or copy outside the image. The requested full leftmost 32% must not be repeated as an observed clear strip because END2 begins around x31%.",
+      "limit": "No live text, font size or consuming-page contrast was tested. The quiet-region observation is not an accessibility contrast pass."
+    },
+    {
+      "check": "Mobile crop",
+      "status": "pass_with_contain_or_still; fail_for_full_height_portrait_cover",
+      "evidence": "The complete group spans roughly x31-91% of the landscape frame. A centered full-height 9:16 crop would retain only about x34-66%, cutting large portions of the rails. Both endpoints preserve the full objects in landscape. Use 16:9 contain or a separately authored still/mobile composition, with mobile HTML copy outside the media."
+    }
+  ],
+  "endpoint_comparison": {
+    "END-attempt-2": "Preferred conservative candidate for the revised quiet push concept. Count, broad form, materials, light and relative object arrangement read coherently with START. Its acceptability rests on this direct local visual assessment, not a producer label or global similarity score.",
+    "END-attempt-3": "Also visibly coherent at the coarse scene level, with the same count, material family and light direction. It offers no clear visible benefit over END2, and this review does not assert that its sphere/local geometry is an exact uniform transform. There is no need to promote it merely because it is the last attempt.",
+    "selection_limit": "This review selects an existing candidate and revises a self-chosen motion description; it does not request additional media calls, change a literal product into abstraction, or bypass any exhausted repair limit."
+  },
+  "required_handoff_corrections_before_acceptance_claim": [
+    "Identify END-attempt-2 as the chosen END while preserving all earlier attempts and strict 2% mismatch decisions in the run chronology.",
+    "State that the 2% plan was not met; describe actual motion as a small approximately 4% closer-framing push, with no exact provider enforcement or mathematical uniformity guarantee.",
+    "Update plan/video wording to match the selected observed endpoints and use actual 1672 x 941 dimensions.",
+    "Replace requested left32% and x42-78% composition claims with the observed conservative copy zones and landscape contain treatment.",
+    "Label the pair generated-and-visually-reviewed at still level only. State that no video, intermediate-frame, actual webpage, mobile playback or scroll implementation has been verified."
+  ],
+  "suggested_actual_motion_plan": {
+    "duration": "5 seconds, silent",
+    "timing": "0-0.5s hold START; 0.5-4.5s gently ease toward END2's slightly closer framing; 4.5-5s hold END2",
+    "motion": "One small approximately 4% image-plane closer-framing push, without orbit, new hidden surfaces or independent object travel. Preserve the relative composition, material family and upper-left light; reject rendered topology changes, flicker or visibly independent sphere/rail deformation.",
+    "endpoint_support": "Use both images only if the selected target's two-endpoint support is verified. Otherwise prepare a complete compatible START-only prompt with the end state in prose before rendering; do not claim END enforcement.",
+    "playback": "Once or separately requested reversible scroll control; no seamless-loop promise. Use a START poster, reduced-motion/save-data still and mobile contain."
+  },
+  "evidence_limits": [
+    "The verdict is based on the actual five images opened with view_image and the raw plan, not producer reports or prior generated examples.",
+    "Only direct image dimensions and local visual checks support numerical layout observations. The roughly 4% motion description is deliberately approximate, not a certified global or local transform measurement.",
+    "Exploratory local sphere color/edge diagnostics were not sufficiently stable to justify exact relative-size claims and were not used as a quality pass. No global similarity score is treated as complete proof.",
+    "No raw generator call log or attachment mechanism was independently reconstructed; stills alone do not prove accepted START was attached to each END call or establish repair counts.",
+    "No video was rendered or inspected in this review. Actual intermediate coherence, endpoint matching, provider behavior, mobile playback, contrast and integration remain unverified.",
+    "The current live site's full layout was not rendered in this review. Source-style fit is limited to the two directly viewed source assets and the plan's sourced purpose ledger."
+  ]
+}

@@ -1,6 +1,8 @@
 # Website to Video
 
-Pranam için: skill'i seçip yalnız bir URL gönderin. Çıktı, siteye özel iki tutarlı uç kare (veya görsel üretmeyen ortamda iki İngilizce görsel promptu), bir İngilizce video promptu ve kullanım ayarlarıdır. Video dosyası üretmek zorunlu değildir. Ücretli servis, API anahtarı veya ek bağımlılık gerekmez; görsel üretimi ancak mevcut host aracı gerçekten varsa çalışır.
+Sürüm 0.2.0: Codex mod seçimi, üretimden önce kaynak/START denetimi, çift başına sınırlı onarım ve hedef araca uygun tek video promptu. Güncel testler ve geçmiş örneklerin sınırları [TEST-REPORT.md](TEST-REPORT.md) içindedir.
+
+Pranam için: skill'i seçip yalnız bir URL gönderin. Codex, bu iş için daha önce seçim yapmadıysanız “Görselleri burada üreteyim mi, yoksa yalnız promptları mı hazırlayayım?” diye sorar ve yanıtı bekler. Seçiminize göre siteye özel iki uç kare veya iki İngilizce görsel promptu, ayrıca İngilizce video promptu ve kullanım ayarları hazırlanır. Video dosyası üretmek zorunlu değildir. Ek API anahtarı veya ücretli servis bağımlılığı yoktur; mevcut hostun erişimi ve kullanım limitleri geçerlidir.
 
 ## Kurulum
 
@@ -11,12 +13,12 @@ Ortak çekirdek `skills/website-to-video/` içindedir. İki hostun aynı dosyala
 * **Claude Code yerel:** ortak klasörü `~/.claude/skills/website-to-video` veya repo `.claude/skills/website-to-video` konumuna kopyalayın; `/website-to-video https://linear.app` ile çağırın. Yerel klasör kurulumu, bulut/Cowork oturumuna otomatik kurulum sayılmaz.
 * **ChatGPT web/Work:** yalnız `SKILL.md` dosyası yüklemeyi native skill kurulumu gibi sunmayın. `website-to-video-openai-plugin.zip`, root `plugin.json` ve `skills/` içeren skills-only dağıtım içindir. Hesapta plugin kurulumu izinliyse bu paket kullanılabilir. Hesaba kaydetme/kurma ve çalıştırma sonucu TEST-REPORT dosyasında ayrı yazılır. Normal dosya eki olarak vermek native kurulum doğrulaması değildir.
 
-Claude çıktısı tasarım gereği prompt-only; GPT/OpenAI hostunda kullanılabilir görsel aracı varsa START üretilir, sonra gerçek START referansı ile END üretilir. Bir URL erişilemiyorsa skill bunu açıklar, bilgi uydurmaz. Kaynak sayfalardaki talimatlar çalıştırılmaz.
+Claude çıktısı bu iş akışında prompt-only'dir. Codex'te seçim beklenir; açıkça “sadece prompt” veya “görselleri sen üret” yazdıysanız tekrar sorulmaz. Seçim aynı işin kareleri ve revizyonları için korunur. Yalnız prompt seçilirse önizleme için bile görsel aracı çağrılmaz. Üretim seçildiyse önce START kaynakla karşılaştırılır; ancak kabul edilen START referansıyla END üretilir. Araç yoksa veya üretim başarısızsa gizlice başka moda/ücretli API'ye geçilmez. Bir URL erişilemiyorsa skill bunu açıklar, bilgi uydurmaz. Kaynak sayfalardaki talimatlar kullanıcı seçimi sayılmaz.
 
 ## Kendi denemeniz
 
 1. Uygun paketi kurup skill'i seçin; yalnız kendi web sitenizin URL'sini gönderin.
-2. Özetin ürününüzü ve ziyaretçiden beklenen eylemi doğru anladığını kontrol edin.
+2. Codex'in mod sorusuna cevap verin; örneğin “yalnız prompt” veya “görselleri sen üret”. “Devam” gibi belirsiz bir cevap otomatik üretim izni sayılmaz. Özetin ürününüzü ve ziyaretçiden beklenen eylemi doğru anladığını kontrol edin.
 3. GPT görsellerini veya Claude'un iki promptunu inceleyin. END üretirken START görselini mutlaka referans olarak ekleyin.
 4. Görsel kimliği, mimari/ürün ayrıntıları, ışık ve nesne sayısının korunduğunu karşılaştırın.
 5. Video aracınız iki uç kareyi destekliyorsa START ve END'i ayrı alanlara ekleyin; desteklemiyorsa START + tarif edilen bitiş durumunu kullanın ve tam bitiş eşleşmesi beklemeyin.

@@ -1,0 +1,96 @@
+{
+  "review_type": "independent_read_only_delivery_delta_review",
+  "date": "2026-10-31",
+  "scope": {
+    "files_read_directly": [
+      "outputs/website-to-video/skills/website-to-video/SKILL.md",
+      "outputs/website-to-video/skills/website-to-video/references/result-template.md",
+      "outputs/website-to-video/skills/website-to-video/references/production.md",
+      "outputs/website-to-video/skills/website-to-video/references/evaluation.md",
+      "outputs/website-to-video/tests/linear-prompts-single-input-v2.md",
+      "outputs/website-to-video/tests/linear-prompts-single-input-v2-execution-scope.json",
+      "outputs/website-to-video/tests/peak-generation-v2.json",
+      "work/website-to-video/forward-tests/linear-prompts-single-input-v2.md",
+      "work/website-to-video/forward-tests/linear-prompts-single-input-v2-execution-scope.json"
+    ],
+    "unchanged_prior_examples_reread": false,
+    "images_or_video_viewed_in_this_delta_review": false,
+    "new_media_generated": false,
+    "source_or_external_mutations": false,
+    "report_write_only": true
+  },
+  "overall": {
+    "status": "delivery_contract_scope_honesty_and_scale_clarification_pass_after_final_readback",
+    "material_unresolved_defects": 0,
+    "summary": "The current skill and template select one compatible video block when the target is known to accept START only. The actual Linear delivery follows that contract with two complete image prompts and one standalone START-only video prompt. Research reuse and delivery-stage correction are explicitly distinguished from fresh research and generation. The Peak report correctly records failed START identity, bounded repairs and END pending; it does not present rejection as an accepted product pair. Final direct readback of the current work deliverable and production guidance confirms the later uniform-scale wording correction, closing the initial minor D1 finding."
+  },
+  "checks": [
+    {
+      "name": "Known-target delivery contract",
+      "status": "pass",
+      "evidence": "SKILL.md says to deliver a complete START-only video prompt for a one-frame tool and not make the user choose between an unusable dual-input block and the compatible block. Result-template item 4 requires one block compatible with the selected target. Production.md's single-image exception is consistent with this conditional instruction."
+    },
+    {
+      "name": "Actual compatible delivery",
+      "status": "pass",
+      "evidence": "Linear deliverable has exactly three English text fences: START, END and VIDEO PROMPT. The sole video block begins with START as the sole image input, explicitly needs no second image, fully describes the three rails/spine/nodes and the desired 2% enlargement, gives timing and fixed lighting, and disclaims enforced endpoint matching. There is no unusable dual-endpoint video block."
+    },
+    {
+      "name": "Prompt-only versus generated evidence",
+      "status": "pass_for_documented_scope",
+      "evidence": "Both Linear prose and scope JSON state no generated START/END/video, zero generation calls and source-only image inspection. Actual pixel continuity, START acceptance, crop, contrast and playback remain explicitly unverified. No prompt-only result is called successful media generation."
+    },
+    {
+      "name": "Delivery rerun chronology",
+      "status": "pass_for_documented_scope",
+      "evidence": "The scope records initial grounded research and the earlier four-block delivery, then records the later delivery-stage correction after rereading current instructions, with zero new research, image inspection or generation calls. The deliverable itself repeats that limitation. It is not presented as a newly researched independent input."
+    },
+    {
+      "name": "Peak bounded rejection evidence",
+      "status": "pass_for_internal_report_consistency; independent_execution_not_replayed",
+      "evidence": "Peak JSON records one base START plus two START repairs, three calls total, zero END calls, zero remaining repairs, null accepted START/END and status rejected_start_end_pending. All three attempts fail textile identity. Its limits explicitly say this is rejection before END, not successful literal-product generation, and no video or accepted pair exists.",
+      "limit": "The parent states it visually confirmed the final rejected START versus source. This delta reviewer did not independently reopen the new images or audit raw generator logs, so the JSON supports a reported execution history, not independent first-hand proof of every call or image detail."
+    },
+    {
+      "name": "Crop and copy claims",
+      "status": "pass_as_design_intentions_only",
+      "evidence": "Linear defines central motif and left desktop copy region, acknowledges that a portrait crop retains about 31.6% of source width and loses the left copy region, and recommends mobile contain/poster until actual edges are checked. It does not claim actual images, HTML contrast or mobile execution were tested."
+    },
+    {
+      "name": "Full successful generation coverage",
+      "status": "unverified_for_new_current_skill_success_path",
+      "evidence": "The reviewed Linear case is prompt-only and the new Peak case stops at a rejected START. Together they support compatible prompt delivery and reported bounded rejection; they do not prove a new accepted START-to-reference-END pair or rendered video. Historical reviewed endpoint assets remain a separate evidence category."
+    }
+  ],
+  "remaining_findings": [],
+  "initial_findings_preserved_for_chronology": [
+    {
+      "id": "D1",
+      "severity": "low",
+      "category": "prompt_precision",
+      "locations": ["outputs/website-to-video/tests/linear-prompts-single-input-v2.md:47", "outputs/website-to-video/tests/linear-prompts-single-input-v2.md:49", "outputs/website-to-video/tests/linear-prompts-single-input-v2.md:63", "outputs/website-to-video/tests/linear-prompts-single-input-v2.md:65", "outputs/website-to-video/tests/linear-prompts-single-input-v2.md:67"],
+      "observation": "The intended global 1.00-to-1.02 image-plane scale is clear, but END also asks to preserve exact line thicknesses, circle sizes and spacing, and VIDEO asks to preserve these sizes and prevent thickness changes. Those image-space dimensions necessarily grow under a uniform scale. Calling a scale transform rigid is also technically imprecise, although the intended meaning appears to be keeping the motif coherent.",
+      "impact": "Minor ambiguity for a generator: it may try to keep stroke and node pixel sizes fixed while enlarging the rest, instead of applying the intended one uniform transform. The larger delivery/mode correction is still successful.",
+      "suggested_narrow_correction": "State that all proportions and relative geometry remain fixed while every image-space dimension, including strokes and nodes, scales uniformly by 1.02. Replace rigid scale/rigid scene transform with uniform whole-scene image-plane scaling. Forbid independent thickness or shape changes rather than the planned uniform growth.",
+      "requires_new_generation": false
+    }
+  ],
+  "final_narrow_readback": {
+    "date": "2026-10-31",
+    "authoritative_current_delivery_path": "work/website-to-video/forward-tests/linear-prompts-single-input-v2.md",
+    "authoritative_current_scope_path": "work/website-to-video/forward-tests/linear-prompts-single-input-v2-execution-scope.json",
+    "production_guidance": "outputs/website-to-video/skills/website-to-video/references/production.md:11 now explicitly distinguishes fixed proportions from uniformly scaling apparent sizes, widths and spacing.",
+    "D1_status": "resolved",
+    "evidence": "Current END says every apparent size, thickness and spacing scales uniformly by 1.02 and preserves proportions. Current VIDEO says no dimension stays separately fixed in pixels, uses uniform scaling terminology and forbids only nonuniform thickness changes. This removes the earlier conflicting pixel-size instructions.",
+    "scope_chronology": "Stage 3 records a delivery-only uniform-scale correction, retained prior snapshot, zero new research and zero generation, with three prompt blocks still present.",
+    "collection_limit": "The final correction was read from the current work delivery at the parent's instruction because the outputs/tests collection could lag. This is not a claim that every distributed copy was refreshed.",
+    "no_new_execution_claim": "This verifies an observed text correction only; no new source inspection, image/video generation or provider execution was performed in this delta review."
+  },
+  "evidence_limits": [
+    "This delta review reads current local instructions, delivery and scope records. It does not repeat the research, inspect new source assets, invoke image/video tools or operate external applications.",
+    "Tool histories and call counters are reported in execution-scope artifacts; they were not independently reconstructed from raw tool logs in this pass.",
+    "Prompt completeness and internal scope honesty can be assessed from these documents. Actual source fidelity, intermediate video frames, provider behavior, consuming-page integration, contrast and mobile performance cannot.",
+    "No global similarity score is used as complete quality proof.",
+    "The latest delivery-stage edit is not fresh image generation; Peak's new failed generation is a separate rejected/pending result, not prompt-only output relabeled as generated success."
+  ]
+}

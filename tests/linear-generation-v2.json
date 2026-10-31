@@ -1,0 +1,123 @@
+{
+  "status": "generated_and_reviewed_pair",
+  "run": "fresh independent current-skill Linear generation-v2",
+  "date": "2026-10-31",
+  "mode": "generate",
+  "findings": {
+    "site_fit": "Inspected source asset palette/lighting plus abstract rail metaphor; page layout was not visually rendered, so exact in-page fit remains unverified.",
+    "object_identity": "pass: every output contains three rails and one violet sphere, without fake UI/text/data.",
+    "continuity": "Visual review retains 3 rails, 1 sphere, proportions/material/light, plausible continuous restrained motion. Observed about 3.8% scene enlargement rather than exact 2%; revised motion disclosed.",
+    "copy_space": "top quarter is dark and quiet; left region contains bright ground glow. Keep copy outside artwork; consuming-page contrast not tested.",
+    "mobile": "Entire horizontal rail cluster requires landscape contain or a still fallback. Full-height 9:16 crop not accepted.",
+    "video": "No rendered intermediate frames, playback or endpoint-support verification."
+  },
+  "counters": {
+    "base_start_calls": 1,
+    "base_end_calls": 1,
+    "repair_calls_used": 2,
+    "repair_calls_limit_per_pair": 2,
+    "total_image_calls": 4,
+    "total_pair_cap": 4,
+    "remaining_repairs": 0
+  },
+  "motion_plan": {
+    "original_requested_scale": 1.02,
+    "reviewed_observed_scale_approx": 1.0383436415012046,
+    "revised_video_move": "approximately 3.8% uniform image-plane push",
+    "concept_changed": false
+  },
+  "video_rendered": false,
+  "video_tested": false,
+  "source_urls": [
+    "https://linear.app/",
+    "https://linear.app/plan",
+    "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/6600ca96-e49b-4fd9-c03a-7979faddad00/f=auto,fit=scale-down,metadata=none,width=2560",
+    "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c7fa8f5f-d439-4329-6a65-de549b51e300/f=auto,fit=scale-down,metadata=none,width=2560",
+    "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/028734bb-2e5c-463d-c4ef-702eef293500/f=auto,fit=scale-down,metadata=none"
+  ],
+  "actual_dimensions": [
+    1672,
+    941
+  ],
+  "accepted_assets": [
+    {
+      "path": "examples/linear-v2/START.png",
+      "sha256": "697afb7f5e1e1c88d26001d85b87ad9ff0136abec97e54e6f4762cf66ec71d5b"
+    },
+    {
+      "path": "examples/linear-v2/END.png",
+      "sha256": "6d64ad6a0deb11378b15a3b00e427f7bd4a1b951c8c9f5d8f78f4f28b43c1db0"
+    }
+  ],
+  "calls": [
+    {
+      "order": 1,
+      "stage": "START",
+      "type": "base",
+      "reference_files": [
+        "source-home-glow.png"
+      ],
+      "reference_roles": [
+        "official homepage light/palette inspiration only; no literal UI"
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: START still of an abstract editorial illustration for an embedded Linear planning-section film, NOT a product screenshot or feature demonstration.\nInput image 1 is an actually inspected official Linear homepage glow asset, a near-black field with a broad soft white elliptical glow near the bottom. Its role is lighting/palette inspiration only, not a subject to copy or factual UI.\nCreate a restrained 16:9 1792x1008 dark studio image of exactly three short solid extruded graphite rectangular rails lying parallel on a matte near-black horizontal plane. The rails are simple real sculptural bars, NOT UI cards, panels, dashboards, or text rows. Each has the same width, length and shallow height, a satin graphite top, sharply machined edges and a dark sidewall. They run left-to-right with their long axes parallel, seen from a fixed modest overhead three-quarter camera so top planes and front sidewalls are visible. Arrange them as three evenly spaced parallel lanes, a compact group centered around x60%, y60%, occupying x42-78% and y42-77%. Leave x0-32% and the top quarter quiet near-black for possible live HTML copy outside the artwork.\nA single small solid pale-violet ceramic sphere rests motionless at the midpoint of the MIDDLE rail only. Exactly one sphere, exactly three rails, no other objects, connectors or markings. One broad soft white area light from upper left and a very faint gray-white elliptical ground glow, inspired by the source, illuminate thin edge highlights without fog or beams. Palette: near-black, graphite, soft silver-white and a restrained pale violet accent. Matte black seamless background; no horizon line, gradients or UI grid beyond physically soft studio falloff.\nThis illustration is a nonliteral metaphor for coordinated product work and ordered progress. No actual app screens, logos, letters, numbers, charts, data, browser frames, icons, arrows or invented capabilities. No extra shapes, particles, neon, visible text or symbols. First moment of a single locked shot; later END changes only a 2% image-plane push. Preserve crisp countable geometry and quiet exposure.",
+      "output_decision": "accepted",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "order": 2,
+      "stage": "END",
+      "type": "base",
+      "reference_files": [
+        "START.png"
+      ],
+      "reference_roles": [
+        "actual accepted START; primary continuity reference and edit target"
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset type: END still of the same abstract Linear planning-section editorial film, not actual software UI.\nUse the generated START image as the primary image reference. The attached image is the actual accepted START and the edit target/continuity anchor.\nPreserve the exact scene from START: exactly three equal solid extruded graphite rails on a matte near-black plane, parallel and evenly spaced, long axes left-to-right viewed by the same modest overhead three-quarter camera; satin top planes, machined edges, front dark sidewalls and unchanged end faces. Exactly one small pale-violet solid ceramic sphere rests on the midpoint of the middle rail. Keep rail count, dimensions, bevels, spacing, perspective, sphere count, sphere placement and size relative to rail width, shadows and material microtexture identical. Same upper-left broad soft white area light and gray-white elliptical ground glow, same black seamless background, exposure and focus. No actual software interface, text, logo, numbers, arrows, icons, panels or data.\nMake the END 1672x941 to match the actual accepted START, approximately 16:9. Change only a uniform 2% image-plane camera push centered on the existing object group, as if scaling the exact START scene to 1.02 times its original size about that anchor. Do not move any object independently, orbit, pan, tilt, change focal perspective, rotate rails, change sphere color, add reflections, alter lighting or reveal hidden geometry. Retain the quiet leftmost 32% and top quarter as much as possible. No new objects, disappearance, morphing, geometry drift, new bevels, texture changes or added marks. This is a small feasible second moment in one continuous shot.",
+      "output_decision": "rejected",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "order": 3,
+      "stage": "END",
+      "type": "repair",
+      "reference_files": [
+        "START.png"
+      ],
+      "reference_roles": [
+        "same actual accepted START / primary continuity edit target"
+      ],
+      "prompt": "Use case: precise-object-edit.\nUse the generated START image as the primary image reference. The ONLY attached image is the actual accepted START and edit target; do not use the previous rejected END.\nProduce END of a five-second abstract editorial illustration for Linear planning, not software UI. The scene is exactly THREE parallel short solid graphite rails and ONE pale-violet ceramic sphere resting at the midpoint of the middle rail, all on a near-black matte studio plane. Retain the exact satin materials, bevels, end faces, orientation, sphere position relative to the middle rail, upper-left white lighting, ground glow, black field, exposure and shadows of START.\nRepair ONLY excessive magnification. Previous END enlarged the scene by roughly ten percent. The intended change is barely perceptible: a uniform scene transform of scale 1.02, TWO PERCENT, about group anchor x=1010,y=550 in the 1672x941 canvas. All image-space sizes, line widths and spacing scale TOGETHER by 1.02. Keep all proportions and scene-relative geometry fixed; no independent object movement or deformation. This intended uniform size change is allowed. Nothing else may change.\nFor practical guidance, the START cluster is roughly x535..1504 and y372..727. A 1.02 uniform push about x1010,y550 makes it approximately x525..1514 and y368..731, NOT x490..1570 or a substantial reframing. The sphere center remains approximately x990,y500, with only about one pixel displacement from the intended transform; it must not wander. Preserve original camera angle and do not reveal new surfaces. Keep the same actual 1672x941 frame. No orbit, tilt, relighting, new highlights, extra rail, missing rail, extra sphere, text, UI, numbers, data, logo or graphics. Treat this as a near-identical frame with only a tiny controlled two-percent push.",
+      "output_decision": "accepted_after_documented_reassessment",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "order": 4,
+      "stage": "END",
+      "type": "repair",
+      "reference_files": [
+        "START.png"
+      ],
+      "reference_roles": [
+        "same actual accepted START / primary continuity edit target"
+      ],
+      "prompt": "Use the generated START image as the primary image reference. The sole attachment is the ACTUAL ACCEPTED START, not a rejected END.\nThis is a precise endpoint edit of an abstract Linear editorial illustration: three physical satin graphite bars lying parallel on a black matte plane, one pale-violet ceramic sphere on the middle bar, upper-left soft white lighting and stable broad ground glow, no UI or text.\nThe last attempts zoomed too much. Please make an ALMOST INDISTINGUISHABLE 2% UNIFORM IMAGE-PLANE enlargement of the entire original photograph about anchor (1010,550), retaining the same 1672x941 canvas. Exactly transform every visible scene point by x_new=1010+1.02*(x_old-1010), y_new=550+1.02*(y_old-550). This is a uniform scene transform, not a camera orbit, re-rendering or composition change. All apparent object dimensions, line widths, rail spacing and shadows scale together by 1.02; their ratios and relative arrangement stay fixed. The sphere remains on the middle rail, with the same shade, shape and material.\nSTART already contains the finished scene. Preserve it; do not improve it. No independently enlarged sphere, changed bar slopes, longer bars, new bevels, shifted contact points, relighting, microtexture replacement or changed highlight shapes. A rail edge should move only about ten pixels or less, the sphere diameter should grow only about one pixel, and its center should move only about one pixel. Do not magnify by 5%, 6% or 10%. Keep the rightmost bar end comfortably in frame and the same black upper area. No new objects, lettering, icons, graphics or data. END must look nearly identical to START, with only the specified tiny coherent push.",
+      "output_decision": "not_selected",
+      "dimensions": [
+        1672,
+        941
+      ]
+    }
+  ],
+  "chronology_note": "Initial exact-2% decisions and final creative reassessment are retained in local raw evidence. The final END is attempt 2, accepted as same concept with disclosed approximately 3.8% motion; exact 2% was not achieved. No additional image call followed reassessment. Raw source photos and unselected attempts are not distributed."
+}

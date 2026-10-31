@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-31",
+  "input_url": "https://website-to-video-unreachable-test.invalid/",
+  "operation": "Actual web open, no generated media",
+  "observed_result": "URL was not accessible via the web tool",
+  "expected_and_applied_response_tr": "Bu bağlantıya erişemedim; sitenin markasını, ürünlerini ve görsellerini doğrulayamıyorum. Siteye özelmiş gibi içerik uydurmadan erişilebilir bir URL veya herkese açık sayfa içeriği gerekiyor.",
+  "brand_analysis_invented": false,
+  "image_calls": 0,
+  "video_calls": 0,
+  "external_mutations": 0,
+  "scope": "Current-skill negative path manually exercised by the primary agent; not an independent security or real-brand site test."
+}

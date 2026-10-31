@@ -1,0 +1,103 @@
+{
+  "status": "rejected_start_end_pending",
+  "run": "independent current-skill generation-v2",
+  "date": "2026-10-31",
+  "mode": "generate images",
+  "findings": {
+    "source_identity": "fail: invented maze-like/swirled textile replaces fine source weave",
+    "framing": "pass for visible single complete bag, front view, whitespace",
+    "continuity": "unverified: no END generated",
+    "motion": "planned only; no intermediate frames or video tested",
+    "copy_space": "observed broad white side margins; page text remains outside media; consuming-page contrast unverified",
+    "mobile_crop": "full-height 9:16 crop not accepted; use contained landscape or separately authored mobile still"
+  },
+  "counters": {
+    "base_start_calls": 1,
+    "base_end_calls": 0,
+    "repair_calls_used": 2,
+    "repair_calls_limit_per_pair": 2,
+    "total_image_calls": 3,
+    "total_pair_cap_if_end_reached": 4,
+    "remaining_repairs": 0,
+    "end_calls_avoided_by_gate": 1
+  },
+  "source_urls": [
+    "https://www.peakdesign.com/products/everyday-backpack",
+    "https://www.peakdesign.com/",
+    "https://cdn.shopify.com/s/files/1/2986/1172/files/everyday-backpack-black-20-1.jpg?crop=center&height=1024&v=1762275581&width=1024",
+    "https://cdn.shopify.com/s/files/1/2986/1172/files/1_BEDB-20-BK-2.jpg?v=1682534543",
+    "https://cdn.shopify.com/s/files/1/2986/1172/files/everyday-backpack-black-30-2.jpg?crop=center&height=1024&v=1725404905&width=1024"
+  ],
+  "accepted_start": null,
+  "accepted_end": null,
+  "calls": [
+    {
+      "order": 1,
+      "stage": "START",
+      "type": "base",
+      "reference_roles": [
+        "official source identity / background-extension edit target"
+      ],
+      "decision": "rejected",
+      "findings": [
+        "Strong wavy/moire-like textile pattern across flap and main front panel differs from source fine weave.",
+        "Lower-right flap patch carries altered linework.",
+        "Complete silhouette and overall front hardware broadly match; not sufficient for literal product fidelity."
+      ],
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "order": 2,
+      "stage": "START",
+      "type": "repair",
+      "reference_roles": [
+        "original official product source / edit target"
+      ],
+      "decision": "rejected",
+      "findings": [
+        "Flap and front panel still show invented maze-like/wavy textile texture relative to fine source.",
+        "Bag outline and framing remain broadly plausible; literal materials fidelity remains failed."
+      ],
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "order": 3,
+      "stage": "START",
+      "type": "repair",
+      "reference_roles": [
+        "original official photograph / background-only extension edit target"
+      ],
+      "decision": "rejected",
+      "findings": [
+        "Flap still displays conspicuous maze-like/swirled fine texture absent from inspected original.",
+        "Front panel texture is redrawn; photo-preservation instruction did not retain original material appearance.",
+        "Broad shape/front angle, full object, white backdrop retained; these do not satisfy fine literal fidelity."
+      ],
+      "dimensions": [
+        1672,
+        941
+      ]
+    }
+  ],
+  "raw_evidence_retained_outside_distribution": [
+    {
+      "file": "start-attempt-1.png",
+      "sha256": "107ae0db1e51b6ec36759ee303b5c302614185b78cf2f69137ae1c07532b48fd"
+    },
+    {
+      "file": "start-attempt-2.png",
+      "sha256": "732cf552fda6b1f08274cbe0ee304f87b146580641bc212ff9f6cb9cbacf33f7"
+    },
+    {
+      "file": "start-attempt-3.png",
+      "sha256": "f4aa08459c3ffa6bdf9c88416abe828b9255c67aa0cb1796fef0562f940adb81"
+    }
+  ],
+  "limits": "No accepted pair, END, intermediate video or successful literal product image. Rejected images and source photos remain outside package. This run verifies bounded rejection before END, not successful generation."
+}

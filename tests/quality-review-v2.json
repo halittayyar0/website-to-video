@@ -1,0 +1,74 @@
+{
+  "review_type": "independent_targeted_re_review",
+  "review_date": "2026-10-31",
+  "scope": {
+    "documents_read_directly": ["outputs/website-to-video/examples/peak-design.md", "outputs/website-to-video/examples/naples.md", "outputs/website-to-video/examples/linear/RESULT.md"],
+    "images_reinspected_with_view_image": ["outputs/website-to-video/examples/linear/start.png", "outputs/website-to-video/examples/linear/end.png", "work/website-to-video/references/peak-design-reference.jpg", "work/website-to-video/attempts/peak-start-attempt-1.png", "work/website-to-video/attempts/peak-end-attempt-3.png"],
+    "dimension_method": "Direct PIL image-size reads",
+    "source_or_external_app_mutations": false,
+    "new_media_generated": false,
+    "prior_test_reports_read": false
+  },
+  "overall": {
+    "status": "Q1_Q2_Q3_documentation_findings_resolved_after_final_readback",
+    "summary": "Q1 and Q2 resolved during the initial re-review. Q3 was initially partially resolved; the final narrow readback directly confirmed the newly added Peak dimensions paragraph, closing its remaining omission. No new substantive defect was found. The actual Peak pair remains correctly rejected; editorial corrections are not fresh generation or workflow execution evidence."
+  },
+  "resolution_checks": [
+    {
+      "id": "Q1",
+      "status": "resolved_as_documentation_and_evidence_framing",
+      "evidence_location": "outputs/website-to-video/examples/peak-design.md:5",
+      "evidence": "The current text explicitly states that START already changed the plain source fabric, END followed that defective START, the historical pair does not prove the new START gate, and this START would be rejected before END under the current workflow.",
+      "artifact_status": "still_rejected",
+      "limits": "The five images were reopened. Peak START and END still contain unsupported decorative textile patterns. No corrected product image or new successful START-gate run exists in this review. Historical version labels and exact tool chronology were not independently established."
+    },
+    {
+      "id": "Q2",
+      "status": "resolved",
+      "evidence_locations": ["outputs/website-to-video/examples/peak-design.md:30", "outputs/website-to-video/examples/naples.md:32", "outputs/website-to-video/examples/linear/RESULT.md:32"],
+      "evidence": "Each example now contains a separate complete English START-only video block. Each identifies START as the only required input, restates its own scene, timing, fixed elements, allowed change, negatives and playback intent, and describes the desired final state without requiring an attached END. The uncertain endpoint is explicitly described as guidance rather than an enforced frame.",
+      "motion_details_checked": {"linear": "One yellow marker moves horizontally from below the left card to below the center card; all three cards, six strokes and connector remain fixed.", "naples": "Only gentle water ripples and minimal in-place float bobbing; courtyard geometry and daylight remain fixed.", "peak_design": "Only a faint far-right backdrop illumination changes; the bag, product illumination and grounded shadow remain fixed."},
+      "limits": "Prompt portability is supported by reading the blocks. A real single-image video generator was not invoked and no provider's endpoint behavior was verified."
+    },
+    {
+      "id": "Q3",
+      "status": "resolved_after_final_narrow_readback",
+      "resolved": ["Linear states actual 1672 x 941 dimensions and approximate 16:9 ratio.", "Peak reports roughly 89% bag height versus its requested 72% target."],
+      "initial_readback_observation": "Peak's rejected START and END actual dimensions were absent from peak-design.md at the initial re-review. Both files were directly measured again as 1672 x 941.",
+      "final_readback_evidence": "The current peak-design.md paragraph before START now explicitly reports the rejected START and END as 1672 x 941, says that this is not exact 16:9, and states that dimension measurement is not proof of product identity or execution of the new quality gate.",
+      "final_readback_location": "outputs/website-to-video/examples/peak-design.md:7",
+      "severity": "low",
+      "suggested_narrow_correction": "Add a sentence to the rejected-artifact paragraph: both historical frames are 1672 x 941, approximately 16:9. No asset regeneration or source-image change is needed."
+    }
+  ],
+  "remaining_findings": [],
+  "initial_re_review_findings_preserved_for_chronology": [
+    {
+      "id": "Q3-remnant",
+      "severity": "low",
+      "location": "outputs/website-to-video/examples/peak-design.md:5",
+      "issue": "Observed dimensions of the rejected Peak pair are not stated.",
+      "correction": "State that both historical images are 1672 x 941, approximately 16:9.",
+      "production_impact": "Minor documentation completeness only; the example already rejects the assets and correctly reports the framing mismatch."
+    }
+  ],
+  "final_narrow_readback": {
+    "date": "2026-10-31",
+    "method": "Read current first twelve lines of outputs/website-to-video/examples/peak-design.md directly after the parent reported an added dimensions paragraph.",
+    "scope": "Only the final Peak reporting edit was rechecked; the earlier image inspection and prompt review remain the substantive evidence.",
+    "result": "Q3 closed. No unresolved findings remain from Q1-Q3.",
+    "media_or_execution_claim": "No new image or video was generated, and no generation workflow or external application was executed. This readback establishes only the observed documentation correction."
+  },
+  "reconfirmed_visual_assessment": {
+    "linear": "Three cards, six strokes, connector and one yellow marker remain visibly coherent at both endpoints. A horizontal marker move is feasible. The upper region remains visually quiet. Mobile contain preserves the outer cards; full-height portrait cover would crop them.",
+    "peak_design": "Literal product identity still fails because the generated cloth adds decorative patterns absent from the source. Coarse silhouette agreement is not sufficient proof. Mobile contain is appropriate; no failed image is reclassified as accepted.",
+    "naples": "No Naples image was supplied or generated. Its source fidelity and eventual crop remain unverified design intentions."
+  },
+  "evidence_limits": [
+    "This is a targeted local artifact and documentation re-review, not a new end-to-end generation run.",
+    "No live source page, consuming website, generated video, mobile playback, scroll seeking or HTML text contrast was tested.",
+    "Stills and prose cannot establish exact generator attachment history, authorization, repair call count or intermediate-frame coherence.",
+    "Global similarity was not used as complete quality proof.",
+    "The current documents' corrections do not convert historical assets into newly generated or newly executed workflow evidence."
+  ]
+}

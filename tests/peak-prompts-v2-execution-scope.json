@@ -1,0 +1,72 @@
+{
+  "run": "peak-prompts-v2",
+  "date": "2026-10-31",
+  "mode": "prompts-only",
+  "request": "https://www.peakdesign.com/products/everyday-backpack — yalnızca promptları hazırla, görsel üretme.",
+  "skill": "skills/website-to-video/SKILL.md",
+  "tools_used": [
+    {
+      "tool": "exec_command",
+      "purpose": "Read the specified skill and its four reference files; create source-image directory; download two publicly linked official photographs for visual inspection; verify saved deliverable files."
+    },
+    {
+      "tool": "web__run",
+      "operations": [
+        "open",
+        "click"
+      ],
+      "purpose": "Read product and homepage; follow actual product image and mission links."
+    },
+    {
+      "tool": "view_image",
+      "purpose": "Visually inspect both downloaded official product references."
+    },
+    {
+      "tool": "apply_patch",
+      "purpose": "Save the actual deliverable and this execution record locally."
+    },
+    {
+      "tool": "collaboration.send_message",
+      "purpose": "Report execution scope and progress to the parent agent only."
+    }
+  ],
+  "source_urls": [
+    "https://www.peakdesign.com/products/everyday-backpack",
+    "https://www.peakdesign.com/eu/products/everyday-backpack",
+    "https://www.peakdesign.com/",
+    "https://www.peakdesign.com/pages/mission",
+    "https://www.peakdesign.com/global/pages/mission",
+    "https://cdn.shopify.com/s/files/1/2986/1172/files/everyday-backpack-black-20-1.jpg?crop=center&height=1024&v=1762275581&width=1024",
+    "https://cdn.shopify.com/s/files/1/2986/1172/files/1_BEDB-20-BK-2.jpg?v=1682534543"
+  ],
+  "visual_references_inspected": [
+    {
+      "path": "../peak-reference-v2/official-black-20l.jpg",
+      "role": "corroborating official gallery photograph",
+      "observed": "Single front-facing dark backpack on white; textured body, broad flap, central latch, side zippers, top handle."
+    },
+    {
+      "path": "../peak-reference-v2/official-turntable-01.jpg",
+      "role": "primary literal product identity reference",
+      "observed": "Single front-facing black backpack on white; fine textile, flap, central latch, handle, seam and zipper lines, strap ends."
+    }
+  ],
+  "target_video_tool": null,
+  "video_prompt_adaptation": "One complete tool-neutral dual-endpoint prompt, conditional on verified endpoint capability. Unknown target does not establish that only one input is supported, so no separate complete one-image alternative was added. Conditional one-image guidance explains START-only input and unenforced described end state.",
+  "generated_images": 0,
+  "generated_videos": 0,
+  "generation_calls": 0,
+  "paid_service_calls": 0,
+  "external_mutations": 0,
+  "existing_examples_or_reports_read": false,
+  "limitations": [
+    "Homepage and product page were read with web text extraction; full webpage render, actual layout, typography, and responsive behavior were not visually checked.",
+    "Two actual official product photographs were visually inspected; no generated START or END exists.",
+    "Continuity, START quality gate, actual dimensions, crops and contrast remain unverified for future generated assets.",
+    "No video generation, intermediate-frame inspection, playback, platform-specific input execution or site implementation occurred.",
+    "The product URL redirected to an EU page; displayed stock and CTA are region/time dependent.",
+    "Public reference photographs were downloaded only for source inspection; these are not generated endpoint assets."
+  ],
+  "deliverable": "peak-prompts-v2.md",
+  "packaging_note": "Official reference photographs are not redistributed. Their paths identify test-time scratch evidence, not bundled generated endpoints."
+}
