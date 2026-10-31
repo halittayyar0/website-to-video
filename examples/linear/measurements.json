@@ -1,0 +1,34 @@
+{
+  "dimensions": [
+    1672,
+    941
+  ],
+  "startMarker": {
+    "center": [
+      570.83,
+      550.28
+    ],
+    "bounds": [
+      558,
+      537,
+      584,
+      563
+    ],
+    "pixels": 549
+  },
+  "endMarker": {
+    "center": [
+      835.22,
+      549.84
+    ],
+    "bounds": [
+      823,
+      537,
+      848,
+      562
+    ],
+    "pixels": 536
+  },
+  "outsideMarkerMeanAbsoluteRGBDifference": 0.7111,
+  "note": "Pixel measurements support, but do not replace, manual card-count, identity and scene review. No video was rendered."
+}

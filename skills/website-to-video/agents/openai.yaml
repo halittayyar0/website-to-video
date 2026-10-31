@@ -1,0 +1,4 @@
+interface:
+  display_name: "Website to Video"
+  short_description: "Create matched website frames and video prompts"
+  default_prompt: "Use $website-to-video with this website URL."

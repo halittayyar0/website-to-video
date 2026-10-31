@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "website-to-video",
+  "version": "0.1.0",
+  "description": "Prepare matched website film endpoints and a complete video prompt from a URL.",
+  "author": {"name": "halittayyar0"},
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Website to Video",
+        "shortDescription": "Website frames and prompts",
+        "longDescription": "Analyze a website and prepare two consistent film endpoints, or image prompts when generation is unavailable, plus a complete video prompt for embedded or scroll-controlled media.",
+        "developerName": "halittayyar0",
+        "capabilities": [],
+        "defaultPrompt": "Use Website to Video with this website URL."
+      }
+    }
+  }
+}

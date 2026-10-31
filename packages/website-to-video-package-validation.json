@@ -1,0 +1,40 @@
+{
+  "status": "archive checks passed; host execution limits remain in TEST-REPORT.md",
+  "archives": [
+    {
+      "archive": "website-to-video-openai-plugin.zip",
+      "files": 17,
+      "sha256": "fc6efee98d33f960525c0bd525363cfc444d0ae24d65cfc1d7f5c304abfb1ac7",
+      "byteComparison": "pass",
+      "paths": "pass",
+      "symlinks": "none"
+    },
+    {
+      "archive": "website-to-video-claude.zip",
+      "files": 6,
+      "sha256": "f97b6ff0bc4d5093c122a0435c42f9a12545b5c2340732b96823ece5cbed7526",
+      "byteComparison": "pass",
+      "paths": "pass",
+      "symlinks": "none"
+    }
+  ],
+  "sourceFiles": {
+    "DESIGN.md": "29e0afdb352705ecbe559ad9315616cab135c3322883532dcb893c18d47bbd4f",
+    "plugin.json": "73b0ca20038a7126f39fdd15164756802db8ce6451a7a6eaf48e5d4ad0ccd749",
+    "README.md": "da0183ef39437a33d38eccb3d0acec01fbb9373b2a3665c54f335f14787d1ce7",
+    "TEST-REPORT.md": "c87d4f2cce25dbe45b99e0842218bde966e9ad6a79997028499fa07b741aceec",
+    "examples/injection-check.md": "635e0f49257da8faccc8eec70b006b8645a01fc29ba005a0595158f8519e5afe",
+    "examples/naples.md": "c7e73ccc3537c752d6968c981759e1ec3bfe07ef26cecdc762aa24eab8da6861",
+    "examples/peak-design.md": "1c34b8f11302dedb3fbed1a6a71a5a89d287e245fb58e08e00792d8877f00644",
+    "examples/unreachable.md": "fe3c034a0595f629ddfeb8eb551127ddfe89f0066228fb76b28f8727d2618c90",
+    "examples/linear/end.png": "6bd85897413a5c717b619b1d4a538af50fb1a15499eea76c8e305b324e4cc706",
+    "examples/linear/measurements.json": "f40497ebc36d2fd9a270858b4d0c0395dc9731e4f4e266a5d085a99200bcfb7b",
+    "examples/linear/RESULT.md": "a1abf40cf7a7e738eb43b3767b0ce7ad06d97750104f419d0dd43851fc6d42ba",
+    "examples/linear/start.png": "4ddee77d4b7257ae5a6aa2e9da35cd45d05c744be713666b4f8483aa63c2fe96",
+    "skills/website-to-video/SKILL.md": "34b8a8f2cf4c65366eccabe534ebb9c0a34775b7e53ee38ac135fc0c3c600bb9",
+    "skills/website-to-video/agents/openai.yaml": "0de89a51f0fb140a143e66885e1ce823cbea6f0de19f53898059c379a096904c",
+    "skills/website-to-video/references/evaluation.md": "f53d2301b6ecac0c225bbe711d7c29436ae9fdf348d7ce0c69c2aa0a089dd829",
+    "skills/website-to-video/references/production.md": "78fb61b7770055fcabbbb18c0360392674dac5025c4e035b059fbf334d62d081",
+    "skills/website-to-video/references/result-template.md": "46151d93ca2eb39ec82f5e1b8ab6bc1b09f4c2c796144f304bf3219901e2aae0"
+  }
+}
