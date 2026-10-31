@@ -1,5 +1,6 @@
 {
   "status": "archive checks passed; host execution limits remain in TEST-REPORT.md",
+  "claudeReadme": "Adapted to skill-root layout; test report uses repository URL because evidence examples are not bundled in minimal Claude ZIP. Core bytes are unchanged.",
   "archives": [
     {
       "archive": "website-to-video-openai-plugin.zip",
@@ -7,15 +8,17 @@
       "sha256": "aa5ea1df5faac948f530c8f65010e5a44ebf1cb960741d0a87d1101856e2204d",
       "byteComparison": "pass",
       "paths": "pass",
-      "symlinks": "none"
+      "symlinks": "none",
+      "internalMarkdownLinks": "pass"
     },
     {
       "archive": "website-to-video-claude.zip",
       "files": 7,
-      "sha256": "3da6509e384de16081db99be7cbe9e9795ed626ef64bec8b734cc889e938140e",
+      "sha256": "ad0f0ef6b231ff32429c40c62739a4d873990a71b15dfb53820f833c6b47ccf6",
       "byteComparison": "pass",
       "paths": "pass",
-      "symlinks": "none"
+      "symlinks": "none",
+      "internalMarkdownLinks": "pass"
     }
   ],
   "sourceFiles": {
