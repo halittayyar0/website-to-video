@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "website-to-video",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Prepare matched website film endpoints and a complete video prompt from a URL.",
   "author": {
     "name": "Halit Tayyar"

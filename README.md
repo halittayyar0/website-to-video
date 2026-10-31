@@ -14,7 +14,7 @@ Addresses work with or without `https://`. Product/detail URLs stay the focus. T
 
 - A source-grounded explanation of the chosen scene and its place on the website.
 - Exactly two endpoint images or complete English image prompts for a feasible, resolved shot.
-- A complete English video prompt with action, intermediate phases, camera, timing and continuity constraints.
+- A complete English video prompt directly in the final chat response as one copyable text code block, including action, intermediate phases, camera, timing and continuity constraints. A download link does not replace it.
 - Crop, poster, accessibility and playback recommendations, with unverified items identified.
 
 The source is researched before the scene is chosen. For an ordinary motion request, merely zooming or cropping a static product photograph is insufficient. Proposed editorial staging is labeled and does not invent product features or claim to be real footage. Explicit camera-only, ambient and loop briefs remain valid. START is reviewed against source before END is generated with that actual START as reference. Failed outputs are rejected and repairs are bounded.
@@ -33,7 +33,7 @@ A skill is the workflow instruction. A plugin is a distribution package containi
 
 ## Version and evidence
 
-Current version: **0.2.5**. Creative ownership is explicit: an unspecified brief delegates creative decisions to the agent after research. Prior motion and source-fidelity checks remain acceptance criteria, not an aesthetic template.
+Current version: **0.2.6**. Creative ownership is explicit: an unspecified brief delegates creative decisions to the agent after research. Prior motion and source-fidelity checks remain acceptance criteria, not an aesthetic template.
 
 [TEST-REPORT.md](TEST-REPORT.md) separates current bounded behavioral checks, historical live source/image work, failed attempts, and unverified platforms/video execution. Existing examples are test artifacts, not mandatory shot recipes. Third-party brands are independent examples without endorsement; source links are not blanket media licenses.
 

@@ -1,11 +1,11 @@
 {
-  "version": "0.2.5",
+  "version": "0.2.6",
   "scope": "Syntax, links, source/archive byte equality and installation; not host/media execution",
   "archives": [
     {
       "archive": "website-to-video-openai-plugin.zip",
       "files": 60,
-      "sha256": "79985e998ab32fedd4060f7e5be128b73f81efc919117d6aba3a946d72039f88",
+      "sha256": "bd49163b49d85c8ea82770f5335896ba23148d797b20e4031a15815c99c65072",
       "byteComparison": "pass",
       "paths": "pass",
       "internalMarkdownLinks": "pass"
@@ -13,7 +13,7 @@
     {
       "archive": "website-to-video-claude.zip",
       "files": 7,
-      "sha256": "fa91c50c39b28b8be237344145717181ab0348d64fc6282ce0baaa159e9c10c6",
+      "sha256": "25acab2efb0447cf0a3d3a67259a2ad9d26b41f50309b2b4ed149a9b76836e23",
       "byteComparison": "pass",
       "paths": "pass",
       "internalMarkdownLinks": "pass"
@@ -21,9 +21,9 @@
   ],
   "sourceFiles": {
     "DESIGN.md": "7eb5e1898a86a32e61b17c8bee784a95cec8394f08ecfcf76167f906243fba42",
-    "plugin.json": "0d22b05e65a87fc9241fe6a1ad6a49007d407d6206d5ab6ebf6312cc631d2ddf",
-    "README.md": "40eae11ead7ea0a260a07b72371b15ca1175b42612f24367e6cf29fd901e3ac8",
-    "TEST-REPORT.md": "af54bbe97e1a1d76c2c732d12b489e506c8380be116e572d5db8e4971637e7a6",
+    "plugin.json": "5804890fc05918c1636a84e47ffd1b5424e8c4edbaa4b64f4c38af2cac737bbe",
+    "README.md": "9ca671362c22c5f97461b671c188083d426446afd23f7e421660aa1940c8523e",
+    "TEST-REPORT.md": "6f5903440b5df68c6c63d83d2328add5fe126061cd89871172b79b05cea876ac",
     "examples/injection-check.md": "635e0f49257da8faccc8eec70b006b8645a01fc29ba005a0595158f8519e5afe",
     "examples/naples.md": "fcdd919b5d15faf6a00acc7bbd614df4e33249cc4b23829c9cbcf36e6a36c2fb",
     "examples/peak-design.md": "34d5874a66792ffdb51ab6736e9224454de64f210cb2e0da5023fd4076d7a1f3",
@@ -35,12 +35,12 @@
     "examples/linear-v2/END.png": "6d64ad6a0deb11378b15a3b00e427f7bd4a1b951c8c9f5d8f78f4f28b43c1db0",
     "examples/linear-v2/RESULT.md": "3fa8a79a5b26f47f1f3440a6642635d48a14c5a92a93f076972fbe55a3ce215e",
     "examples/linear-v2/START.png": "697afb7f5e1e1c88d26001d85b87ad9ff0136abec97e54e6f4762cf66ec71d5b",
-    "skills/website-to-video/SKILL.md": "cf17207c53bbb5616b1e629f5d4ca7d9bbbe3bd9fa9ae71384d5b8eb8662fae0",
+    "skills/website-to-video/SKILL.md": "08670ec047bca5ac7641bf990fe3c35a9574e508154775120d48446665f4f6be",
     "skills/website-to-video/agents/openai.yaml": "0de89a51f0fb140a143e66885e1ce823cbea6f0de19f53898059c379a096904c",
-    "skills/website-to-video/references/evaluation.md": "7941de3e57088329c6960bfd31fc1ba8cfc2ea354ea28d4b2ed0334acc360536",
+    "skills/website-to-video/references/evaluation.md": "26b6278593d47c46389c40110943f2dbdd64f4eb1d91050b4eed4f42820a8c95",
     "skills/website-to-video/references/mode-selection.md": "33b9a37681708a6b42670e9a6403f8460cd94986881c8fd9db98b83269b90d6e",
     "skills/website-to-video/references/production.md": "d7de2e5d63ac79683f8585f571afeb02a2b28319ea27e246c16ae708579d8fda",
-    "skills/website-to-video/references/result-template.md": "3eaae6bde251b34cf538d2323bfe19dfa890315a87bb166c50b1638d7d729920",
+    "skills/website-to-video/references/result-template.md": "6a31dae8953b7d3bf00db9305c8433af61882ae93605062b3e0896f63d7b9cc8",
     "tests/delivery-delta-review-v2.json": "2ada5ca40a14c873e6027773467f7da061e89cb8da44260629aec915eb13ee2d",
     "tests/linear-generation-v2.json": "d0912124dd96d3411ac12b931aec25d2e259a342a64d78529864fdd9748d5816",
     "tests/linear-prompts-single-input-v2-execution-scope.json": "91f7b6b96a872fe28e9a3d393c734290c8c35cedb3901b91ae7c83e89507a7b7",

@@ -1,6 +1,12 @@
-# Website to Video, v0.2.5 test raporu
+# Website to Video, v0.2.6 test raporu
 
 31 Ekim 2026. Yerel Windows/Codex ortamında yapıldı. Belge desteği, dosya kurulumu, elle davranış testi ve başka istemcide gerçek çalıştırma ayrı değerlendirilir.
+
+## v0.2.6: video promptu sohbet içinde
+
+Dar teslim biçimi düzeltmesi: çözümlenmiş çekimin tam İngilizce video promptu, hem görsel üretimi hem prompt-only modunda, son sohbet yanıtında tek fenced text bloğunda zorunludur. Dosya/ZIP bağlantısı, özet, kısaltılmış metin, placeholder veya sonradan sunma teklifi yeterli değildir. Ek dosya varsa inline tam metinle aynı olmalıdır. Gerçekten çözümlenmemiş işin bekletilmesi korunur; blok doldurmak için uydurma üretim yapılmaz.
+
+Çekirdek, sonuç şablonu ve değerlendirme ölçütü birlikte düzenlendi; kaynak metin incelemesi, skill sözdizimi ve paket/yerel/remote dosya eşliği kontrol edilir. Bu küçük biçim değişikliğinde yeni model davranış koşusu, site araştırması veya medya üretimi yapılmadı. Önceki davranış/görsel testleri tarihsel kapsamıyla korunur.
 
 ## v0.2.5: yaratıcı karar sahipliği ve genel dağıtım
 
